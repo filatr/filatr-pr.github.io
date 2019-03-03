@@ -10,7 +10,7 @@
 <body>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet">
-
+<h1>Ну что же, начнем?</h1>
 <p>Тут, на этом поддомене, создал для себя такую вот небольшую песочницу"; </p>
 <p>Ну что ж, приступим</p>
 <p>Тут у нас:</p>
