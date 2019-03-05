@@ -5,16 +5,16 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<? include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
 </head>
 <body>
-<? include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet txt good">
 
 
 
 
 </div>
-<? include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>
 </html>
