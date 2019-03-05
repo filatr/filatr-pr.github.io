@@ -15,16 +15,8 @@
 <ul>
 <li><a href="http://htmlbook.ru/" target="_blank">htmlbook</a></li>
 <li><a href="http://www.avalanche.kiev.ua/site/free/convert-table-html.html" target="_blank">Excel в HTML</a></li>
+<li>Этот сайт на <a href="https://github.com/filatr/pr">GitHub.com</a></li>
 </ul>
-
-<hr>
-
-<ul>
-<li><a href="http://www.mytraf.in.ua/" target="_blank">mytraf.in.ua</a></li>
-<li><a href="http://mytraf-pro.16mb.com/" target="_blank">mytraf-pro</a></li>
-
-</ul>
-
 
 <hr>
 

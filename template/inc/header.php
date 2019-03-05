@@ -9,6 +9,7 @@
 			</ul>
 		</li>
 		<li><a href="/txt/">Текстовочки</a></li>
+		<li><a href="/github/">Тест github</a></li>
 		<li><a href="/4php/">Смотрим/тестируем PHP</a></li>
 	</ul>
 <div class="clear"></div>
