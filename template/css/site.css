@@ -30,28 +30,34 @@ a:hover {
     padding: 10px;
 }
 #main_menu {
-    background:none;
+    display: flex;
+	background:none;
 	margin: 15px 0;
 }
 #main_menu li {
     background:none;
-	display: inline-block;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 5px;
+	width: 15%;
 }
+#main_menu li li {width: 100%;}
 #main_menu a {
     background-color: #0b3b0b;
     border: 1px solid #f00;
     color: #cef6ce;
     display: block;
+	height: 40px;
     font-size: 17px;
     font-weight: bold;
     margin: 0;
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    width: 200px;
+    /*width: 200px;*/
 }
 #main_menu li:hover a {color: #f00;}
 .sub_menu {
