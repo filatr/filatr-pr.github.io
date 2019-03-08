@@ -30,7 +30,8 @@
 <p><input type="radio" name="answer" value="a2">Одесса</p>
 <p><input type="radio" name="answer" value="a3">Львов</p>
 <p><input type="radio" name="answer" value="a4">Харьков</p>
-<p><input type="radio" name="answer" value="a5">Др. город</p>
+<p><input type="radio" name="answer" value="a5">Полтава</p>
+<p><input type="radio" name="answer" value="a6">Др. город</p>
 <p><input type="submit"></p>
 </form>
 </div>
