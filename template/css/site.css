@@ -30,15 +30,15 @@ a:hover {
     padding: 10px 0 0;
 }
 #main_menu {
-    display: flex;
+    display: block;
 	background:none;
 	margin: 15px 0;
 }
 #main_menu li {
     background:none;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+	display: inline-block;
+	/*justify-content: center;
+	align-items: center;*/
     list-style: none;
     margin: 0;
     padding: 0 5px;
@@ -50,7 +50,7 @@ a:hover {
     border: 1px solid #f00;
     color: #cef6ce;
     display: block;
-	height: 40px;
+	/*height: 40px;*/
     font-size: 17px;
     font-weight: bold;
     margin: 0;
