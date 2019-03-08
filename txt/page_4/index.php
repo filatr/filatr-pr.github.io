@@ -5,10 +5,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="robots" content="index, follow">
 		<meta name="description" content="Табы, коротенько" />
-<? include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
 </head>
 <body>
-<? include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet txt tabs">
 <h1>Tabs (табы) | CSS</h1>
 <p>Да, давайте немного поговорим о табах</p>
@@ -29,6 +29,6 @@
 <p><a href="http://shpargalkablog.ru/2012/03/css-tabs.html">Источник</a></p>
 
 </div>
-<? include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>
 </html>

@@ -19,7 +19,7 @@
 <li><a href="/txt/page_3">Материал на переделку</a></li>
 <li><a href="/txt/page_4">Табы</a></li>
 <li><a href="/txt/page_5">Пункт 5</a></li>
-<li><a href="javascript:void(0);">Пункт 6</a>
+<li><a href="/txt/page_6">Пункт 6: будем делать форму</a>
 	<ol class="sub_menu_vert_test_ol">
 		<li><a href="javascript:void(0);">Пункт 6.1</a></li>
 		<li><a href="javascript:void(0);">Пункт 6.2</a></li>
