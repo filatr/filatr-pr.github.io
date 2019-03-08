@@ -413,3 +413,49 @@ ol.bit_php_link_2 {
 	list-style-type: decimal-leading-zero;
     width: 33%;
 }
+.tag {
+    font-family: "Courier New", Courier, mono;
+    color: #069;
+    font-size: 1em;
+    font-weight: bold;
+}
+.button_enter {
+    background: #ddd;
+    border: 2px outset #ddd;
+    padding: 0 3px;
+    color: #333;
+    font-size: 0.92em;
+}
+.attribute {
+    color: #b61039;
+    font-weight: bold;
+    border: none;
+    background: none;
+    white-space: nowrap;
+}
+.value {
+    color: #39892f;
+    font-weight: bold;
+}
+.example, pre code, .example2 {
+    font: 14px "Courier New", Courier, mono;
+    padding: 7px;
+	background: #f8f7f2;
+}
+form {
+
+    border: 1px solid chocolate;
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+form p {
+  font-size: 18px;
+  color: darkblue;
+}
+form p input {
+  color: red;
+  font-weight: bold;
+  padding: 5px 10px;
+}
