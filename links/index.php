@@ -15,10 +15,12 @@
 <ul>
 <li><a href="http://htmlbook.ru/" target="_blank">htmlbook</a></li>
 <li><a href="http://www.avalanche.kiev.ua/site/free/convert-table-html.html" target="_blank">Excel в HTML</a></li>
-<li>Этот сайт на <a href="https://github.com/filatr/pr">GitHub.com</a></li>
+<li>Этот сайт на <a href="https://github.com/filatr/pr" target="_blank">GitHub.com</a></li>
+<li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник Javascript</a></li>
 </ul>
 
 <hr>
+
 
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>

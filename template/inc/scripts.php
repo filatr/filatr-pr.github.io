@@ -8,11 +8,13 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="/template/inc/lightbox/js/lightbox.min.js"></script>
 <script src="/template/inc/jquery.bxslider/jquery.bxslider.min.js"></script>
+
+<script src="/template/inc/js/js.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
   $('.bxslider').bxSlider({
 
-  slideWidth: 400,	// ширина слайда; при 500 ширина 510, высота 452, при 300, ширина 310, высота 210
+  slideWidth: 400,
   
   //	автопрокрутка
   //auto: true,

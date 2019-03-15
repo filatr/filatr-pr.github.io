@@ -19,26 +19,29 @@
 <li><a href="/txt/page_3">Материал на переделку</a></li>
 <li><a href="/txt/page_4">Табы</a></li>
 <li><a href="/txt/page_5">Пункт 5</a></li>
-<li><a href="/txt/page_6">Пункт 6: будем делать форму</a>
+<li><a href="/txt/page_6">Будем делать форму</a></li>
+<li><a href="/txt/4php/">Тестируем PHP</a></li>
+<li><a href="/txt/4js/">Тестируем JS</a></li>
+<li><a href="javascript:void(0);">Пункт 7</a>
 	<ol class="sub_menu_vert_test_ol">
-		<li><a href="javascript:void(0);">Пункт 6.1</a></li>
-		<li><a href="javascript:void(0);">Пункт 6.2</a></li>
-		<li><a href="javascript:void(0);">Пункт 6.3</a></li>
-		<li><a href="javascript:void(0);">Пункт 6.4</a>
+		<li><a href="javascript:void(0);">Пункт 7.1</a></li>
+		<li><a href="javascript:void(0);">Пункт 7.2</a></li>
+		<li><a href="javascript:void(0);">Пункт 7.3</a></li>
+		<li><a href="javascript:void(0);">Пункт 7.4</a>
 			<ul  class="sub_menu_vert_test_ul">
-				<li><a href="javascript:void(0);">Пункт 6.4.1</a></li>
-				<li><a href="javascript:void(0);">Пункт 6.4.2</a></li>
-				<li><a href="javascript:void(0);">Пункт 6.4.3</a></li>
+				<li><a href="javascript:void(0);">Пункт 7.4.1</a></li>
+				<li><a href="javascript:void(0);">Пункт 7.4.2</a></li>
+				<li><a href="javascript:void(0);">Пункт 7.4.3</a></li>
 			</ul>
 		</li>
 	</ol>
 </li>
 <li><a href="javascript:void(0);">Пункт 7</a>
 <ul class="sub_menu_vert_test_ul">
-	<li><a href="javascript:void(0);">Пункт 7.1</a></li>
-	<li><a href="javascript:void(0);">Пункт 7.2</a></li>
-	<li><a href="javascript:void(0);">Пункт 7.3</a></li>
-	<li><a href="javascript:void(0);">Пункт 7.4</a></li>
+	<li><a href="javascript:void(0);">Пункт 8.1</a></li>
+	<li><a href="javascript:void(0);">Пункт 8.2</a></li>
+	<li><a href="javascript:void(0);">Пункт 8.3</a></li>
+	<li><a href="javascript:void(0);">Пункт 8.4</a></li>
 </ul>
 </li>
 </ul>
