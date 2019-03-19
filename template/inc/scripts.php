@@ -1,5 +1,5 @@
-﻿<link rel="icon" href="/template/favico.ico" type="image/x-icon" />  
-<link rel="shortcut icon" href="/template/favico.ico" type="image/x-icon">
+﻿<link rel="icon" href="/template/favicon.ico" type="image/x-icon" />  
+<link rel="shortcut icon" href="/template/favicon.ico" type="image/x-icon">
 
 <link href="/template/css/site.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="/template/inc/lightbox/css/lightbox.css" rel="stylesheet" />

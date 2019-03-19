@@ -1,4 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
 		<title>Немного JS</title>
@@ -12,14 +11,14 @@
 <div class="contet">
 <h1>Немного JS: теория и практика</h1>
 
-<p>Полезные сайты и материал</p>
+<p>Полезные сайты</p>
 <ul>
 <li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник Javascript</a></li>
 <li><a href="http://qaru.site/questions/12331/what-is-event-bubbling-and-capturing" target="_blank">Что такое пузырь и захват событий?</a></li>
 <li><a href="http://www.linkex.ru/java/inc-dec.php" target="_blank">Инкремент и декремент</a></li>
-<li><a href="https://learn.javascript.ru/types-intro">Шесть типов данных, typeof</a></li>
+<li><a href="https://learn.javascript.ru/types-intro" target="_blank">Шесть типов данных, typeof</a></li>
 </ul>
-
+<p>Полезный материал</p>
 <h2>Шесть типов данных, typeof</h2>
 <ol>
 <li>Число «number»</li>
@@ -40,6 +39,30 @@
 </ul>
 <p>Работают они одинаково, но первый синтаксис короче.</p>
 
+<h2>Будем делать калькулятор</h2>
+
+<script>
+
+ // var a = prompt('Введите первое число', Number('')), b = prompt('Введите второе число', Number('')), matFunction = prompt('Можем приплосовать, отнять или узнать остаток от деления', '');
+
+  // if (matFunction=='+') {
+	  // alert(+a + +b);
+  // }
+  // else if (matFunction=='-') {
+	  // alert(a-b);
+  // }
+  // else if (matFunction=='%') {
+	  // alert(a%b);
+  // }
+  // else {
+	  // alert('упс, что-то пошло не так');
+  // }
+
+// </script>
+<ol>
+<li><a href="calc1.php" target="_blank">Простейший калькулятор, v1</a></li>
+</ol>
+  
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>
