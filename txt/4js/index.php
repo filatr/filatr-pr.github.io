@@ -61,7 +61,7 @@
 // </script>
 <ol>
 <li><a href="calc1.php" target="_blank">Простейший калькулятор, v1</a></li>
-<li><a href="calc2.php" target="_blank">Простейший калькулятор, юзаем function</a></li>
+<li><a href="calc2.php" target="_blank">Юзаем function</a></li>
 </ol>
 
 
