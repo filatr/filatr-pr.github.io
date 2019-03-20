@@ -13,26 +13,26 @@
 
 <p>Будем делать простейший калькулятор, для работы с пройстейшими аритфметическими действиями</p>
 <p>Срабатывает при загрузке страницы</p>
-<script>
+<p><script>
 
- var a = prompt('Введите первое число', Number('')), b = prompt('Введите второе число', Number('')), matFunction = prompt('Можем приплосовать, отнять или узнать остаток от деления', '');
+ var a = parseInt(prompt('Введите первое число', Number(''))), b = parseInt(prompt('Введите второе число', Number(''))), matFunction = prompt('Можем приплосовать, отнять или узнать остаток от деления', '');
 
   if (matFunction=='+') {
-	  alert(+a + +b);
+	  document.write(a+b);
   }
   else if (matFunction=='-') {
-	  alert(a-b);
+	  document.write(a-b);
   }
   else if (matFunction=='%') {
-	  alert(a%b);
+	  document.write(a%b);
   }
   else {
-	  alert('упс, что-то пошло не так');
+	  document.write('упс, что-то пошло не так');
   }
-
+  //parseIn или number
 </script>
 
-  
+  </p>
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>

@@ -61,7 +61,10 @@
 // </script>
 <ol>
 <li><a href="calc1.php" target="_blank">Простейший калькулятор, v1</a></li>
+<li><a href="calc2.php" target="_blank">Простейший калькулятор, юзаем function</a></li>
 </ol>
+
+
   
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
