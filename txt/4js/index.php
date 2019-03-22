@@ -58,10 +58,11 @@
 	  // alert('упс, что-то пошло не так');
   // }
 
-// </script>
+// 
+</script>
 <ol>
 <li><a href="calc1.php" target="_blank">Простейший калькулятор, v1</a></li>
-<li><a href="calc2.php" target="_blank">Юзаем function</a></li>
+<li><a href="function.php" target="_blank">Юзаем function</a></li>
 </ol>
 
 
