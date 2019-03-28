@@ -11,16 +11,22 @@
 <div class="contet">
 <h1>Немного JS: теория и практика</h1>
 
-<p>Полезные сайты</p>
+<h2>Полезные сайты</h2>
 <ul>
 <li><a href="https://plnkr.co/edit/?p=preview" target="_blank"><b>Helping developers make the web</b></a></li>
 <li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник Javascript</a></li>
 <li><a href="http://qaru.site/questions/12331/what-is-event-bubbling-and-capturing" target="_blank">Что такое пузырь и захват событий?</a></li>
 <li><a href="http://www.linkex.ru/java/inc-dec.php" target="_blank">Инкремент и декремент</a></li>
 <li><a href="https://learn.javascript.ru/types-intro" target="_blank">Шесть типов данных, typeof</a></li>
+<li><a href="http://qaru.site/questions/718978/angularjs-splice-vs-slice" target="_blank">JavaScript Массив сплайс против ломтика</a></li>
+<li><a href="https://learn.javascript.ru/array-methods" target="_blank">Массивы: методы</a></li>
+<li><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Источник 1</a></li>
+<li><a href="https://learn.javascript.ru/array-iteration" target="_blank">Источник 2</a></li>
 </ul>
-<p>Полезный материал</p>
-<h2>Шесть типов данных, typeof</h2>
+
+<h2>Теория</h2>
+
+<h3>Шесть типов данных, typeof</h3>
 <ol>
 <li>Число «number»</li>
 <li>Строка «string»</li>
@@ -29,7 +35,7 @@
 <li>Специальное значение «undefined»</li>
 <li>Объекты «object»</li>
 </ol>
-
+<hr>
 <h3>Оператор typeof</h3>
 
 <p>Оператор typeof возвращает тип аргумента.</p>
@@ -40,31 +46,59 @@
 </ul>
 <p>Работают они одинаково, но первый синтаксис короче.</p>
 
-<h2>Будем делать калькулятор</h2>
+
+<hr>
+
+<h3>Splice and Slice</h3>
+<p><b>Важно знать</b></p>
+<p>Splice and Slice - это функции Javascript Array.</p>
+<p>Splice vs Slice</p>
+<p>Метод splice() возвращает удаленные элементы в массиве, а метод slice() возвращает выбранный элемент в массиве как новый объект массива.</p>
+<p>Метод splice() изменяет исходный массив, а метод slice() не изменяет исходный массив.</p>
+<p>Метод splice() может принимать n количество аргументов, а метод slice() принимает 2 аргумента.</p>
+<p>Сплав с примером</p>
+<p>Аргумент 1: Индекс, обязательно. Целое число, указывающее, в какую позицию добавлять/удалять элементы. Используйте отрицательные значения для указания позиции из конца массива.</p>
+<p>Аргумент 2: Необязательно. Количество элементов для удаления. Если установлено значение 0 (ноль), никакие элементы не будут удалены. И если не будет передано, все элементы из предоставленного индекса будут удалены.</p>
+<p>Аргумент 3... n: Необязательно. Новый элемент (ы), который нужно добавить в массив.</p>
+<p><a href="http://qaru.site/questions/718978/angularjs-splice-vs-slice" target="_blank">Источник 1</a></p>
+<p><a href="https://learn.javascript.ru/array-methods" target="_blank">Источник 2</a></p>
+
+<hr>
+
+<h3>Массив: перебирающие методы (forEach)</h3>
 
 <script>
-
- // var a = prompt('Введите первое число', Number('')), b = prompt('Введите второе число', Number('')), matFunction = prompt('Можем приплосовать, отнять или узнать остаток от деления', '');
-
-  // if (matFunction=='+') {
-	  // alert(+a + +b);
-  // }
-  // else if (matFunction=='-') {
-	  // alert(a-b);
-  // }
-  // else if (matFunction=='%') {
-	  // alert(a%b);
-  // }
-  // else {
-	  // alert('упс, что-то пошло не так');
-  // }
-
-// 
+/*massEff.forEach (function (el, i, arr){
+  console.log('element' + el, i, arr);
+//  document.write('element' + el, i, arr);
+})
+*/
 </script>
+<p>Метод forEach() виконує надану функцію один раз для кожного елемента масиву.</p>
+<p>Метод forEach() перебирає всі елементи масиву за зростанням індексу та викликає для кожного функцію callback. Оминає властивості, які було видалено або не було започатковано — в розріджених масивах.</p>
+<p>Функція callback викликається з трьома аргументами:</p>
+<li>
+<li>значення елемента;</li>
+<li>індекс елемента;</li>
+<li>масив, що перебирається.</li>
+</li>
+<p>Якщо для forEach() вказано параметр thisArg, його буде використано як this для функції callback. Якщо ж не вказано, то буде використано значення undefined. Зрештою значення this для функції callback визначатиметься відповідно до загальних правил.</p>
+<p>Множина індексів елементів, що їх перебиратиме forEach() з'ясовується ще до першого виклику callback. Елементи, додані після здійснення виклику forEach(), буде знехтувано (callback для жодного з них не викликатиметься). Якщо змінити значення котрогось зі ще не відвіданих елементів масиву, зміни буде враховано — до функції callback потрапить те значення елемента, яке він мав безпосередньо перед відповідним викликом callback. Якщо елемент видалено до відвідування, його відвідано не буде. Якщо вже відвіданий елемент видалено упродовж перебирання (наприклад, за допомогою shift()), індекси подальших елементів зменшаться на одиницю, а отже певний елемент буде пропущено — дивіться приклади нижче у статті.</p>
+<p>На відміну від map() чи reduce(), метод forEach() завжди вертає значення undefined, тож продовжити ланцюжок викликів після нього неможливо. Досить типовим є виклик forEach() наприкінці ланцюжка методів з метою виконання додаткових дій.</p>
+<p>Сам метод forEach() не змінює масив, на якому його викликано, втім усередині функції callback це можливо.</p>
+<p><b>Заувага:</b> Зупинити чи перервати цикл forEach() неможливо без викидання винятку. Якщо вам це потрібно, метод forEach() — не ліпший вибір. Скористайтеся натомість звичайним циклом. Якщо ви перевіряєте елементи масиву на відповідність певній умові та маєте потребу повернути значення типу Boolean, зверніть увагу на методи every() та some(). Також можна скористатись новими методами find() та findIndex(), якщо вони доступні, — в цих методах перебір елементів переривається, якщо чергове значення відповідає умові.</p>
+
+<p><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Источник 1</a></p>
+<p><a href="https://learn.javascript.ru/array-iteration" target="_blank">Источник 2</a></p>
+
+<hr><hr>
+
+<h2>Практикум</h2>
+
 <ol>
-<li><a href="calc1.php" target="_blank">Простейший калькулятор, v1</a></li>
+<li><a href="calc.php" target="_blank">Простейший калькулятор</a></li>
 <li><a href="function.php" target="_blank">Юзаем function</a></li>
-<li><a href="next.php" target="_blank">Юзаем новое</a></li>
+<li><a href="objects.php" target="_blank">Юзаем objects</a></li>
 </ol>
 
 

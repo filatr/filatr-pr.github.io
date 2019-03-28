@@ -10,24 +10,8 @@
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet">
 <h1>Занятие от 27 03</h1>
-<p>это важно!!</p>
-<p>
-<script>
-/*
-http://qaru.site/questions/718978/angularjs-splice-vs-slice
-https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
-https://learn.javascript.ru/array-iteration
-это важно!
-*/
-/*massEff.forEach (function (el, i, arr){
-  console.log('element' + el, i, arr);
-//  document.write('element' + el, i, arr);
-})
-*/
 
-</script>
-</p>
-<h2>Далее обекты</h2>
+<h2>Обекты</h2>
 
 <!--
 https://learn.javascript.ru/prototype

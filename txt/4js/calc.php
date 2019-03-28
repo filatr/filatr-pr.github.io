@@ -30,6 +30,21 @@
 	  document.write('упс, что-то пошло не так');
   }
   //parseIn или number
+  
+  // var a = prompt('Введите первое число', Number('')), b = prompt('Введите второе число', Number('')), matFunction = prompt('Можем приплосовать, отнять или узнать остаток от деления', '');
+
+  // if (matFunction=='+') {
+	  // alert(+a + +b);
+  // }
+  // else if (matFunction=='-') {
+	  // alert(a-b);
+  // }
+  // else if (matFunction=='%') {
+	  // alert(a%b);
+  // }
+  // else {
+	  // alert('упс, что-то пошло не так');
+  // }
 </script>
 
   </p>
