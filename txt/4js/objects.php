@@ -46,12 +46,12 @@ document.write(result);
 
 <script>
 var user = {};
-user.name = 'Иван'
-user.lastName = 'Иванов'
-user.age = '18'
-user.eMail = 'mail@mail.com'
-user.phone = '555 55 55';
-user.city = 'Киев'
+user.name = prompt('Введите имя', '');
+user.lastName = prompt('Введите фамилию или отчество', '');
+user.age = parseInt(prompt('Ваш возраст', ''));
+user.eMail = prompt('Ваш е-мейл', '');
+user.phone = prompt('Ваш номер телефона', '');
+user.city = prompt('От куда Вы', '');
 
 function userWrite(obj) {
 return 'Меня зовут: ' + obj.name + ' ' + obj.lastName + ',\n' + 'мне ' + obj.age + 'лет' + ',  я живу в городе ' + obj.city + ';<br>Мои контакты: ' + 'эл.почта: ' + obj.eMail + ' и номер телефона: ' + obj.phone;
