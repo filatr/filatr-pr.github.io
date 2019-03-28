@@ -64,6 +64,7 @@
 <ol>
 <li><a href="calc1.php" target="_blank">Простейший калькулятор, v1</a></li>
 <li><a href="function.php" target="_blank">Юзаем function</a></li>
+<li><a href="next.php" target="_blank">Юзаем новое</a></li>
 </ol>
 
 
