@@ -20,8 +20,10 @@
 <li><a href="https://learn.javascript.ru/types-intro" target="_blank">Шесть типов данных, typeof</a></li>
 <li><a href="http://qaru.site/questions/718978/angularjs-splice-vs-slice" target="_blank">JavaScript Массив сплайс против ломтика</a></li>
 <li><a href="https://learn.javascript.ru/array-methods" target="_blank">Массивы: методы</a></li>
-<li><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Источник 1</a></li>
-<li><a href="https://learn.javascript.ru/array-iteration" target="_blank">Источник 2</a></li>
+<li><a href="https://developer.mozilla.org/uk/docs/Learn/JavaScript/Objects/Basics" target="_blank">Основи об'єктів</a></li>
+<li><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Array.prototype.forEach()</a></li>
+<li><a href="https://learn.javascript.ru/array-iteration" target="_blank">Массив: перебирающие методы</a></li>
+<li><a href="http://javascript.ru/tutorial/object/intro" target="_blank">Объекты Javascript в примерах</a></li>
 </ul>
 
 <h2>Теория</h2>
@@ -88,8 +90,10 @@
 <p>Сам метод forEach() не змінює масив, на якому його викликано, втім усередині функції callback це можливо.</p>
 <p><b>Заувага:</b> Зупинити чи перервати цикл forEach() неможливо без викидання винятку. Якщо вам це потрібно, метод forEach() — не ліпший вибір. Скористайтеся натомість звичайним циклом. Якщо ви перевіряєте елементи масиву на відповідність певній умові та маєте потребу повернути значення типу Boolean, зверніть увагу на методи every() та some(). Також можна скористатись новими методами find() та findIndex(), якщо вони доступні, — в цих методах перебір елементів переривається, якщо чергове значення відповідає умові.</p>
 
-<p><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Источник 1</a></p>
-<p><a href="https://learn.javascript.ru/array-iteration" target="_blank">Источник 2</a></p>
+<p><a href="https://developer.mozilla.org/uk/docs/Learn/JavaScript/Objects/Basics" target="_blank">Источник 1</a></p>
+<p><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Источник 2</a></p>
+<p><a href="https://learn.javascript.ru/array-iteration" target="_blank">Источник 3</a></p>
+<p><a href="http://javascript.ru/tutorial/object/intro" target="_blank">Объекты Javascript в примерах</a></p>
 
 <hr><hr>
 
