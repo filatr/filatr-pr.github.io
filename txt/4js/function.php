@@ -11,10 +11,6 @@
 <div class="contet">
 <h1>Юзаем function</h1>
 
-<h2><a href="http://mathhelpplanet.com/static.php?p=javascript-algoritmy-sortirovki">Алгоритмы сортировок на JavaScript</a></h2>
-
-<h3>Пузырьковая сортировка на JavaScript</h3>
-<p>
 <script>
 /*function calc(a,b){
 
@@ -55,13 +51,14 @@ pobeda(result);
 
 /* ************ */
 
+</script>
 
-//var BubbleSort = [45,16,28,35,78,17,89,21,29,6,45,14,88,99,667,647,123]ж
+<h2><a href="http://mathhelpplanet.com/static.php?p=javascript-algoritmy-sortirovki" target="_blank">Алгоритмы сортировок на JavaScript</a></h2>
+<!--
+<h3>Пузырьковая сортировка на JavaScript</h3>
 
-//sortingMassive.sort();
-
-
-
+<p>
+<script>
 function BubbleSort(A)
 {
     var n = A.length;
@@ -74,7 +71,7 @@ function BubbleSort(A)
     return A;
 }
 
-var result = BubbleSort([45,16,28,35,78,17,89,21,29,6,45,14,88,99,667,647,123]);
+var result = BubbleSort([45,16,28,35,78,17,89,21,29,6,45,14,88,99,667,647,123,1,3,4,7,998,34,1000,145,985]);
 document.write(result);
 </script>
 </p>
@@ -99,7 +96,19 @@ function ShellSort(A)
 }
 var result = ShellSort([17,96,88,175,128,137,149,51,983,778,9,6,45,14,88,99,667,647,123,666]);
 document.write(result);
+</script>
+-->
+<script>
+function count() {
+  var i, j; // передвинули объявления var в начало
+  for (i = 0; i < 3; i++) {
+    j = i * 2;
+  }
 
+  alert( i ); // i=3
+  alert( j ); // j=4
+}
+count()
 </script>
 </p>
 

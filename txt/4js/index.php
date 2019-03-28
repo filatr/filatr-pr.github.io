@@ -13,6 +13,7 @@
 
 <p>Полезные сайты</p>
 <ul>
+<li><a href="https://plnkr.co/edit/?p=preview" target="_blank"><b>Helping developers make the web</b></a></li>
 <li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник Javascript</a></li>
 <li><a href="http://qaru.site/questions/12331/what-is-event-bubbling-and-capturing" target="_blank">Что такое пузырь и захват событий?</a></li>
 <li><a href="http://www.linkex.ru/java/inc-dec.php" target="_blank">Инкремент и декремент</a></li>
