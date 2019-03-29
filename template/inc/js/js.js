@@ -26,3 +26,15 @@
 // --f;
 // f;
 
+//let a=prompt("введите имя");
+
+
+var a=prompt();
+var b=prompt();
+if (a>b) {
+	alert ("a");
+alert ("b");
+}
+else if (b>a) {
+alert (b);}
+else {alert (b=a)}
