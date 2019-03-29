@@ -36,6 +36,18 @@ var user2 = new User();
 
 document.write(user1.getName());
 document.write(user2.getName());
+
+
+var vass = {name: 'ddd', age:'23', city: 'hall'};
+var vass2233 = {name: 'aaa', age:'54', city: 'kiev'};
+
+var vass = vass2233;
+
+
+
+alert()
+
+
 </script>
 
   
