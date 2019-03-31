@@ -1,6 +1,6 @@
 <html>
     <head>
-		<title>Немного JS</title>
+		<title>this</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="JS. Просто JS. Проходи дальше" />
 		<meta name="robots" content="index, follow">
@@ -9,7 +9,7 @@
 <body>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet">
-<h1>29/03</h1>
+<h1>Расматриваем this и делаем финал.дз по JS</h1>
 
 <script>
 /*var user = {name: 'vano', age:'19'};
@@ -19,7 +19,7 @@ user2.tell = '555-55-55';
 document.write(user.name);
 document.write(user.tell);
 */
-
+/*
 function User(data = null) {
 	var name = data;
 	this.email = '';
@@ -47,10 +47,9 @@ var vass = vass2233;
 
 alert()
 
-
+*/
 </script>
 
-  
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>

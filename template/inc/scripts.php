@@ -9,7 +9,7 @@
 <script src="/template/inc/lightbox/js/lightbox.min.js"></script>
 <script src="/template/inc/jquery.bxslider/jquery.bxslider.min.js"></script>
 
-<script src="/template/inc/js/js.js" type="text/javascript"></script>
+<!--script src="/template/inc/js/js.js" type="text/javascript"></script-->
 <script type="text/javascript">
 	$(document).ready(function(){
   $('.bxslider').bxSlider({
