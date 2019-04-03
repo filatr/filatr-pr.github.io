@@ -108,8 +108,47 @@ echo 'price \$';
 /*phpinfo();*/
 
 
+$a = 4;
+$b = 5;
+echo $a + $b . '<br>' ; // сложение
+echo $a * $b . '<br>' ; // умножение
+echo $a - $b . '<br>' ; // вычитание
+echo $a / $b . '<br>' ; // деление
+echo $a % $b . '<br>' ; // остаток от деления
+echo '<hr>';
+function sum1($a, $b){
 
+	$c = ($a + $b);
+	printf($c);
 
+};
+$a = '2';
+$b = '3';
+sum1($a,$b);
+echo "<br>";
+
+function umn1($a, $b){
+
+	$c = ($a * $b);
+	printf($c);
+
+};
+$a = '4';
+$b = '5';
+umn1($a,$b);
+echo "<br>";
+
+function del1($a, $b){
+
+	$c = ($a / $b);
+	printf($c);
+
+};
+$a = '6';
+$b = '7';
+del1($a,$b);
+//область видимости переменной
+// масивы, инициализация, unset
 ?>
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
