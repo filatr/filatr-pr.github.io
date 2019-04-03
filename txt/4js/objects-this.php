@@ -9,7 +9,7 @@
 <body>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet">
-<h1>Расматриваем this и делаем финал.дз по JS</h1>
+<h1>Расматриваем this</h1>
 
 <script>
 /*var user = {name: 'vano', age:'19'};
@@ -48,6 +48,26 @@ var vass = vass2233;
 alert()
 
 */
+
+function dred(x){
+	this.name = x;
+	this.surname = obj1.surname;
+	this.age = obj1.age;
+}
+
+var obj1 = {
+	name: 1,
+	surname: 2,
+	age: 3
+}
+
+var obj2 = obj1;
+console.log(obj2);
+obj2 = new dred(4);
+console.log(obj2);
+console.log(obj1);
+
+
 </script>
 
 </div>

@@ -442,13 +442,25 @@ ol.bit_php_link_2 {
     padding: 7px;
 	background: #f8f7f2;
 }
+.like_b {
+    font-weight: bold;
+}
+.like_i {
+    font-style: italic;
+}
+span.color_1 {
+    color: #0724EE;
+    font-weight: bold;
+}
+span.color_2 {
+    color: #DF9E4C;
+    font-weight: bold;
+}
 form {
-
     border: 1px solid chocolate;
     width: 200px;
     border-radius: 15px;
     padding: 10px;
-
 }
 form p {
   font-size: 18px;
@@ -458,4 +470,9 @@ form p input {
   color: red;
   font-weight: bold;
   padding: 5px 10px;
+}
+.dz {
+    width: 50%;
+    font-size: 120%;
+	text-align: justify;
 }

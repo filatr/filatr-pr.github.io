@@ -20,6 +20,7 @@
 <li><a href="/img0">Картинки</a> и то, что с ними модно творить</li>
 <li>и <a href="/links/">несколько ссылок</a></li>
 <li><a href="/github/">github</a></li>
+<li><a href="/txt/4js/">Ломаем JS</a></li>
 <li>и пр.</li>
 </ul>
 </div>

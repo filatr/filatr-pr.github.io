@@ -4,7 +4,7 @@
 </div>
 
 <div class="blco blco_n_2">
-<p>Use <a href="https://github.com/filatr">github</a></p>
+<p>Use <a href="https://github.com/filatr" target="_blank">github</a></p>
 </div>
 
 <div class="blco blco_n_3">

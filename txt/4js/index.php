@@ -18,6 +18,7 @@
 <li><a href="http://qaru.site/questions/12331/what-is-event-bubbling-and-capturing" target="_blank">Что такое пузырь и захват событий?</a></li>
 <li><a href="http://www.linkex.ru/java/inc-dec.php" target="_blank">Инкремент и декремент</a></li>
 <li><a href="https://learn.javascript.ru/types-intro" target="_blank">Шесть типов данных, typeof</a></li>
+<li><a href="https://learn.javascript.ru/object" target="_blank">Объекты как ассоциативные <span class="like_b">массивы</span></a></li>
 <li><a href="http://qaru.site/questions/718978/angularjs-splice-vs-slice" target="_blank">JavaScript Массив сплайс против ломтика</a></li>
 <li><a href="https://learn.javascript.ru/array-methods" target="_blank">Массивы: методы</a></li>
 <li><a href="https://developer.mozilla.org/uk/docs/Learn/JavaScript/Objects/Basics" target="_blank">Основи об'єктів</a></li>
