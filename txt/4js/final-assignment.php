@@ -73,7 +73,7 @@ document.write('<p><span class="like_i">Результат выполнения 
 /// Сим закончили пункт 4
 
 
-var maxRating = Math.max.apply(null, product.rating);
+var maxRating = Math.max.apply(null, product.rating);//  как варант, сделать перебором
 var positionRating = product.rating.indexOf(maxRating);
 
 //document.write(maxRating);
@@ -85,8 +85,13 @@ document.write('<p><span class="like_i">Результат выполнения 
 
 var paragraph = product.rating
 
+//function six(i,k) {
+
+//}
 paragraph.forEach(function(item, i) {
   document.write('<li>Оценку ' + ++i + ' поставили ' + item + ' раз;</li>');
+    // document.write('<li>Оценку ' + arr  + '</li>');
+
 });
 document.write('</ul>');
 

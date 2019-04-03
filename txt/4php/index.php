@@ -11,7 +11,7 @@
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet">
 <h1>Немного PHP</h1>
-
+<div style=display:none;>
 <?php
 $int10 = 42;
 $int2 = 0b101010;
@@ -79,6 +79,37 @@ var_dump ( $a <= $b ); // Меньше или равно
 var_dump ( $a >= $b ); // Больше или равно
 
 echo "<hr>";
+?>
+</div>
+
+<?php
+//типы данных
+// функция и метот - чем отличаются
+echo '<h2>Начинаем разбор</h2>';
+//var_dump
+var_dump(printf('<h2>ddf</h2>'));
+// инкатонация строк
+// типизация
+/*function add(sting $a, string$b){
+
+}*/
+function add(string $a, string $b){
+
+	$c = ($a . $b);
+	printf($c);
+
+};
+$a = 'yugyuguyg';
+$b = 'jihuihjo';
+add($a,$b);
+
+echo 'price \$';
+
+/*phpinfo();*/
+
+
+
+
 ?>
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
