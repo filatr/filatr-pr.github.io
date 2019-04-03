@@ -43,11 +43,11 @@ var product = {
 //console.log(product)
 };
 product.userSale = function() {
-	if (product.sale <= 10) {
-		document.write('<p>Результат выполнения 2го пункта: цена с учетом скидки - ' + product.price*(100-product.sale)/100 + '</p>');
+	if (0 < product.sale <= 10) {
+		document.write('<p><span class="like_i">Результат выполнения 2го пункта:</span> цена с учетом скидки - ' + product.price*(100-product.sale)/100 + '</p>');
 		}
 	else {
-		document.write('<p>Результат выполнения 2го пункта: цена без скидки - ' + product.price + '</p>');
+		document.write('<p><span class="like_i">Результат выполнения 2го пункта:</span> цена без скидки - ' + product.price + '</p>');
 		}
 };
 product.userSale();
@@ -56,8 +56,7 @@ product.userSale();
 
 var counter = 0;
 for (var key in product) {counter++;}
-document.write('<p>Результат выполнения 3го пункта: всего свойств - ' + counter + '</p>');
-// А в чем подвох? при первом же запросе гугл'я выдало результат, который Мы тут же смогли применить.
+document.write('<p><span class="like_i">Результат выполнения 3го пункта:</span> всего свойств - ' + counter + '</p>');
 
 /// Сим закончили пункт 3
 
@@ -65,10 +64,11 @@ Array.prototype.sum = function() {
     return this.reduce(function(a,b){return a+b;});
 };
 var arr = product.rating
-document.write('<p>Результат выполнения 4го пункта: среднее количество голосов - ' + arr.sum() / arr.length + '</p>');
+
+
+document.write('<p><span class="like_i">Результат выполнения 4го пункта</span>: среднее количество голосов - ' + arr.sum() / arr.length + '</p>');
 
 // решение пункта 3 заимствовано тут http://qaru.site/questions/415213/finding-the-average-of-an-array-using-js
-
 
 /// Сим закончили пункт 4
 
@@ -77,18 +77,20 @@ var maxRating = Math.max.apply(null, product.rating);
 var positionRating = product.rating.indexOf(maxRating);
 
 //document.write(maxRating);
-//document.write(positionRating);
-document.write('<p>Результат выполнения 5го пункта: </p>');
-
-
-
-
+//document.write();
+document.write('<p><span class="like_i">Результат выполнения 5го пункта</span>: чаще всего ставили оценку - ' + ++positionRating + '</p>');
 
 /// Сим закончили пункт 5
+document.write('<p><span class="like_i">Результат выполнения 6го пункта</span>: </p><ul>');
 
+var paragraph = product.rating
 
-document.write('<p>Результат выполнения 6го пункта: </p>');
+paragraph.forEach(function(item, i) {
+  document.write('<li>Оценку ' + ++i + ' поставили ' + item + ' раз;</li>');
+});
+document.write('</ul>');
 
+// читали тут https://learn.javascript.ru/array-iteration
 /// Сим закончили пункт 6
 
 
