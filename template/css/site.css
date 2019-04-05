@@ -476,3 +476,7 @@ form p input {
     font-size: 120%;
 	text-align: justify;
 }
+
+div.php_type ol {
+  margin-left: 30px;
+}

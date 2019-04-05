@@ -11,6 +11,38 @@
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet">
 <h1>Немного PHP</h1>
+<p><a href="https://www.php.net/manual/ru/" target="_blank">Мануалы по PHP</a></p>
+<p><a href="http://www.php.su/" target="_blank">Мануалы по PHP, v2</a></p>
+<p class="like_i"><a href="/txt/4php/phpinfo.php" target="_blank">phpinfo</a></p>
+
+<h2>Типы данных</h2>
+<div class="php_type">
+<p>PHP поддерживает восемь простых типов данных (переменных):</p>
+<p>Четыре скалярных типа:</p>
+<ol>
+    <li>boolean (двоичные данные)</li>
+    <li>integer (целые числа)</li>
+    <li>float (числа с плавающей точкой или 'double')</li>
+    <li>string (строки)</li>
+</ol>
+<p>Два смешанных типа:</p>
+<ol start="5">
+    <li>array (массивы)</li>
+    <li>object (объекты)</li>
+</ol>
+<p>И два специальных типа:</p>
+<ol start="7">
+    <li>resource (ресурсы)</li>
+    <li>NULL ("пустой" тип)</li>
+</ol>
+<p>Существуют также несколько псевдотипов:</p>
+<ul>
+    <li>mixed (смешанный)</li>
+    <li>number (числовой)</li>
+    <li>callback (обратного вызова)</li>
+</ul>
+<p class="like_i"><a href="http://www.php.su/learnphp/vars/?types" class="like_i">Источник 1</a></p>
+</div>
 <div style=display:none;>
 <?php
 $int10 = 42;
@@ -85,9 +117,9 @@ echo "<hr>";
 <?php
 //типы данных
 // функция и метот - чем отличаются
-echo '<h2>Начинаем разбор</h2>';
+echo '<h3>Начинаем разбор</h3>';
 //var_dump
-var_dump(printf('<h2>ddf</h2>'));
+var_dump(printf('<p>ddf</p>'));
 // инкатонация строк
 // типизация
 /*function add(sting $a, string$b){
@@ -149,7 +181,9 @@ $b = '7';
 del1($a,$b);
 //область видимости переменной
 // масивы, инициализация, unset
+
 ?>
+
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>

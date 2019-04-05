@@ -11,6 +11,6 @@
 <p>&copy; free for all</p>
 </div>
 <div class="clear"></div>
-
+<div class="u_use"><?php echo $_SERVER['HTTP_USER_AGENT']; ?></div>
 
 </div>

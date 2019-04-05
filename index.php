@@ -21,6 +21,7 @@
 <li>и <a href="/links/">несколько ссылок</a></li>
 <li><a href="/github/">github</a></li>
 <li><a href="/txt/4js/">Ломаем JS</a></li>
+<li><a href="/txt/4php/">Ломаем PHP</a></li>
 <li>и пр.</li>
 </ul>
 </div>
