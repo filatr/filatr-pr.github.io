@@ -13,7 +13,7 @@
 <h1>Немного PHP</h1>
 <p><a href="https://www.php.net/manual/ru/" target="_blank">Мануалы по PHP</a></p>
 <p><a href="http://www.php.su/" target="_blank">Мануалы по PHP, v2</a></p>
-<p class="like_i"><a href="/txt/4php/phpinfo.php" target="_blank">phpinfo</a></p>
+<p class="like_i"><a href="/practice/4php/phpinfo.php" target="_blank">phpinfo</a></p>
 
 <h2>Типы данных</h2>
 <div class="php_type">
