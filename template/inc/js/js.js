@@ -1,3 +1,32 @@
+	$(document).ready(function(){
+  $('.bxslider').bxSlider({
+
+  slideWidth: 400,
+  
+  //	автопрокрутка
+  //auto: true,
+  //autoControls: true,
+
+  // эти два параметра отменяют бесконечный цикл просмотра слайдов
+  //  infiniteLoop: false,
+//  hideControlOnEnd: true
+
+// автонастройка высоты
+//adaptiveHeight: true,
+//mode: 'fade',
+
+// статичное количество слайдов, также не забыть добавить значение ширины
+	minSlides: 3,
+	maxSlides: 3,
+	slideMargin: 15,	// растояние между слайдами, срабатывает, когда показываются несколько слайдов
+  });
+			$('.spoiler_links').click(function(){
+			$(this).next('.spoiler_body').toggle('normal');
+			return false;
+		});
+});
+$(document).on('click','.spoiler-trigger',function(e){e.preventDefault();$(this).toggleClass('active');$(this).parent().find('.spoiler-block').first().slideToggle(300);})
+
 // let a=1;
 // let b=4;
 // a+b;
@@ -38,3 +67,4 @@
 // else if (b>a) {
 // alert (b);}
 // else {alert (b=a)}
+

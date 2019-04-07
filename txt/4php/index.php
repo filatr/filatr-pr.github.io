@@ -41,7 +41,7 @@
     <li>number (числовой)</li>
     <li>callback (обратного вызова)</li>
 </ul>
-<p class="like_i"><a href="http://www.php.su/learnphp/vars/?types" class="like_i">Источник 1</a></p>
+<p class="like_i"><a href="http://www.php.su/learnphp/vars/?types" target="_blank">Источник 1</a></p>
 </div>
 <div style=display:none;>
 <?php
