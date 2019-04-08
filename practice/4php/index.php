@@ -183,7 +183,7 @@ del1($a,$b);
 // масивы, инициализация, unset
 
 ?>
-
+<p><a href="0804.php" target="_blank">08/04</a></p>
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>
