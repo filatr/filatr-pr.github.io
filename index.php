@@ -17,12 +17,14 @@
 <p>Ну что ж, приступим</p>
 <p>Тут у нас:</p>
 <ul>
-<li><a href="/img0">Картинки</a> и то, что с ними модно творить</li>
-<li>и <a href="/links/">несколько ссылок</a></li>
-<li><a href="/github/">github</a></li>
-<li><a href="/txt/4js/">Ломаем JS</a></li>
-<li><a href="/txt/4php/">Ломаем PHP</a></li>
-<li>и пр.</li>
+	<li><a href="/img0">Картинки</a> и то, что с ними модно творить</li>
+	<li>и <a href="/links/">несколько ссылок</a></li>
+	<li><a href="/github/">github</a></li>
+	<li><a href="/practice/4js/">Ломаем JS</a></li>
+	<li><a href="/practice/4php/">Ломаем PHP</a>
+		<ul><li><a href="/practice/forms/">Разбираем формы</a></li></ul>
+	</li>
+	<li>и пр.</li>
 </ul>
 </div>
 

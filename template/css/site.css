@@ -458,9 +458,9 @@ span.color_2 {
     font-weight: bold;
 }
 form {
-    border: 1px solid chocolate;
-    width: 200px;
-    border-radius: 15px;
+    width: 100%;
+    /*border: 1px solid chocolate;
+    border-radius: 15px;*/
     padding: 10px;
 }
 form p {
