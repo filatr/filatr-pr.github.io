@@ -148,7 +148,20 @@ if ($_POST) {
 </p>
 </form>
 </fieldset>
-111
+
+
+<fieldset>
+    <legend>5</legend>
+<form action="action.php" method="post">
+ <p>Ваше имя: <input type="text" name="name" /></p>
+ <p>Ваш возраст: <input type="text" name="age" /></p>
+ <p><input type="submit" /></p>
+</form>
+</fieldset    
+
+
+<a href="1104.php" target="_blank">11/04</a>
+
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
 </body>
