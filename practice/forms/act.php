@@ -49,7 +49,7 @@ echo '<p>' . $myEmail . '</p>';
 
 //echo '<p>' . $myName1 . '</p>';
 //echo '<p>' . $myAge1 . '</p>';
-$sql = "INSERT INTO users (name, age, email)
+$sql = "INSERT INTO user (name, age, email)
 VALUES ('$myName', '$myAge', '$myEmail')";
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";

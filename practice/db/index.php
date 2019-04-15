@@ -13,6 +13,8 @@
 <h1>БД и SQL запросы</h1>
 <p>Источники</p>
 
+<p><a href="/phpmyadmin/" target="_blank">phpmyadmin</a></p>
+
 <ul>
 <li><a href="http://tradebenefit.ru/primery-mysql-zaprosov" target="_blank">Примеры SQL запросов к базе данных MySQL</a></li>
 <li><a href="https://www.site-do.ru/db/db.php#2" target="_blank">Уроки SQL и баз данных</a>
@@ -49,7 +51,7 @@
 $link = mysqli_connect($servername, $username, $password, $dbname) 
     or die("Ошибка " . mysqli_error($link)); 
      $link->set_charset("utf8");
-$query ="SELECT * FROM users";
+$query ="SELECT * FROM user";
 
 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
 if($result)
@@ -95,7 +97,7 @@ if(isset($_POST['name']) && isset($_POST['age']) && isset($_POST['email']) && is
     $age = htmlentities(mysqli_real_escape_string($link, $_POST['age']));
     $email = htmlentities(mysqli_real_escape_string($link, $_POST['email']));
      
-    $query ="UPDATE users SET name='$name', age='$age', email='$email' WHERE id='$id'";
+    $query ="UPDATE user SET name='$name', age='$age', email='$email' WHERE id='$id'";
     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
  
     if($result)
@@ -108,7 +110,7 @@ if(isset($_GET['id']))
     $id = htmlentities(mysqli_real_escape_string($link, $_GET['id']));
      
     // создание строки запроса
-    $query ="SELECT * FROM users WHERE id = '$id'";
+    $query ="SELECT * FROM user WHERE id = '$id'";
     // выполняем запрос
     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
     //если в запросе более нуля строк
@@ -140,7 +142,9 @@ mysqli_close($link);
 
 ?>
 
-
+<ul>
+<li><a href="/admin/">Админ'ка</a></li>
+</ul>
 
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>

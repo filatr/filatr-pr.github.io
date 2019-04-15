@@ -25,7 +25,7 @@ if(isset($_POST['name']) && isset($_POST['age']) && isset($_POST['email']) && is
     $age = htmlentities(mysqli_real_escape_string($link, $_POST['age']));
     $email = htmlentities(mysqli_real_escape_string($link, $_POST['email']));
      
-    $query ="UPDATE users SET name='$name', age='$age', email='$email' WHERE id='$id'";
+    $query ="UPDATE user SET name='$name', age='$age', email='$email' WHERE id='$id'";
     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
  
     if($result)
@@ -38,7 +38,7 @@ if(isset($_GET['id']))
     $id = htmlentities(mysqli_real_escape_string($link, $_GET['id']));
      
     // создание строки запроса
-    $query ="SELECT * FROM users WHERE id = '$id'";
+    $query ="SELECT * FROM user WHERE id = '$id'";
     // выполняем запрос
     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
     //если в запросе более нуля строк
