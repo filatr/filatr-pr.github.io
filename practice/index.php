@@ -14,9 +14,10 @@
 <p>Несколько страцин с моей практикой JS, PHP и пр.</p>
 <ul class="vert_menu_test">
 <li><a href="/practice/tabs/">Табы</a></li>
+<li><a href="/practice/4js/">Тестируем JS</a></li>
 <li><a href="/practice/forms/">Будем делать форму</a></li>
 <li><a href="/practice/4php/">Тестируем PHP</a></li>
-<li><a href="/practice/4js/">Тестируем JS</a></li>
+<li><a href="/practice/db/">БД и SQL запросы</a></li>
 </ul>
 
 </div>

@@ -503,3 +503,15 @@ div.php_type ol {
 	display: none;
 }
 /* Стили для спойлера, конец */
+.test_bd {
+    display: flex;
+}
+.test_bd div {
+display: inline-flex;
+border: 1px solid #052a83;
+width: 10%;
+height: 20px;
+vertical-align: top;
+padding: 10px;
+margin: 10px;
+}

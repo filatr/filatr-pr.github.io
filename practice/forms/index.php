@@ -14,18 +14,31 @@
 <h1>Работа с формой</h1>
 
 <p>Источнии</p>
+
+
 <ul>
-	<li><a href="https://www.php.net/manual/ru/tutorial.forms.php" target="_blank">Работа с формами</a></li>
-	<li><a href="http://www.php.su/articles/?cat=examples&page=069" target="_blank">HTML-формы</a></li>
-	<li>Об формах на htmlbook
+	<li>Форма с точки зрения html
 		<ul>
-		<li><a href="http://htmlbook.ru/html/form" target="_blank">Тег &lt;form&gt;</a></li>
-		<li><a href="http://htmlbook.ru/samhtml5/formy" target="_blank">Формы</a></li>
+			<li><a href="http://htmlbook.ru/html/form" target="_blank">Тег &lt;form&gt;</a></li>
+			<li><a href="http://htmlbook.ru/samhtml5/formy" target="_blank">Формы</a></li>
 		</ul>
 	</li>
-	<li><a href="http://www.php.su/phphttp/forms/?send" target="_blank">Передача параметров с помощью HTML-форм</a></li>
-	<li><a href="https://htmlweb.ru/php/php_form.php" target="_blank">Работа с формами</a></li>
+	<li>Форма и PHP
+		<ul>
+			<li><a href="https://www.php.net/manual/ru/tutorial.forms.php" target="_blank">Работа с формами</a></li>
+			<li><a href="http://www.php.su/articles/?cat=examples&page=069" target="_blank">HTML-формы</a></li>
+			<li><a href="http://www.php.su/phphttp/forms/" target="_blank">Работа с HTML формами</a></li>
+			<li><a href="http://www.php.su/phphttp/forms/?send" target="_blank">Передача параметров с помощью HTML-форм</a></li>
+			<li><a href="https://htmlweb.ru/php/php_form.php" target="_blank">Работа с формами</a></li>
+		</ul>
+	</li>
+	<li>БД и форма
+		<ul>
+			<li><a href="/practice/db/" target="_blank">БД и SQL запросы. Мой практикум</a></li>
+		</ul>
+	</li>
 </ul>
+
 <p>Тег <span class="tag">&lt;form&gt;</span> устанавливает форму на веб-странице. Форма предназначена для обмена данными между пользователем и сервером. Область применения форм не ограничена отправкой данных на сервер, с помощью клиентских скриптов можно получить доступ к любому элементу формы, изменять его и применять по своему усмотрению.</p>
 <p>Документ может содержать любое количество форм, но одновременно на сервер может быть отправлена только одна форма. По этой причине данные форм должны быть независимы друг от друга.</p>
 <p>Для отправки формы на сервер используется кнопка Submit, того же можно добиться, если нажать клавишу <span class="button_enter">Enter</span> в пределах формы. Если кнопка Submit отсутствует в форме, клавиша <span class="button_enter">Enter</span> имитирует ее использование.</p>
@@ -35,8 +48,65 @@
 <p>Допускается внутрь контейнера <span class="tag">&lt;form&gt;</span> помещать другие теги, при этом сама форма никак не отображается на веб-странице, видны только ее элементы и результаты вложенных тегов.</p>
 
 <h2>Сама форма</h2>
+
+
 <fieldset>
-    <legend>Пример 1</legend>
+    <legend><a name="forma1"></a>Пример 1</legend>
+<form action="act.php" method="post">
+ <p>Ваше имя: <input type="text" name="name" /></p>
+ <p>Ваш возраст: <input type="number" name="age" min="0" max="100" step="1" value="" /></p>
+ <p>Укажите e-mail: <input type="email" name="email" /></p>
+ <p><input type="submit" /></p>
+</form>
+</fieldset>
+
+
+
+<?php
+require_once ("{$_SERVER['DOCUMENT_ROOT']}template/inc/connection.php");
+ 
+if(isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])){
+ 
+    // подключаемся к серверу
+    $link = mysqli_connect($servername, $username, $password, $dbname) 
+        or die("Ошибка " . mysqli_error($link)); 
+     
+    // экранирования символов для mysql
+    $day = htmlentities(mysqli_real_escape_string($link, $_POST['day']));
+    $month = htmlentities(mysqli_real_escape_string($link, $_POST['month']));
+    $year = htmlentities(mysqli_real_escape_string($link, $_POST['year']));
+
+     
+    // создание строки запроса
+    $query ="INSERT INTO favouriteday VALUES(NULL, '$day','$month','$year')";
+     
+    // выполняем запрос
+    $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
+    if($result)
+    {
+        echo "<span style='color:blue;'>Данные добавлены</span>";
+    }
+    // закрываем подключение
+    mysqli_close($link);
+}
+?>
+<fieldset>
+    <legend>Пример 2</legend>
+<form method="post">
+<p>Введите день:<br> 
+<input type="text" name="day" /></p>
+<p>Введите месяц:<br> 
+<input type="text" name="month" /></p>
+<p>Введите год:<br> 
+<input type="text" name="year" /></p>
+<input type="submit" value="Добавить">
+</form>
+</fieldset>
+
+<br>
+<div class="spoiler_v2">
+<a href="#" class="spoiler-trigger"><span>Пример n</span></a>
+<div class="spoiler-block">
 <form action="action.php" method="post">
 <p>От куда Вы</p>
 <p><input type="radio" name="answer" value="a1">Киев</p>
@@ -47,19 +117,23 @@
 <p><input type="radio" name="answer" value="a6">Др. город</p>
 <p><input type="submit"></p>
 </form>
-</fieldset>
+</div>
+</div>
 
-<fieldset>
-    <legend>Пример 2</legend>
+<div class="spoiler_v2">
+<a href="#" class="spoiler-trigger"><span>Пример n</span></a>
+<div class="spoiler-block">
 <form action="action.php" method="post">
  <p>Ваше имя: <input type="text" name="name" /></p>
  <p>Ваш возраст: <input type="text" name="age" /></p>
  <p><input type="submit" /></p>
 </form>
-</fieldset>
+</div>
+</div>
 
-<fieldset>
-    <legend>Пример 3</legend>
+<div class="spoiler_v2">
+<a href="#" class="spoiler-trigger"><span>Пример n</span></a>
+<div class="spoiler-block">
 <form action="" method="post">
     Имя:  <input type="text" name="personal[name]" /><br />
     Email: <input type="text" name="personal[email]" /><br />
@@ -71,20 +145,12 @@
     </select><br />
     <input type="submit" value="Отправь меня!" />
 </form>
-</fieldset>
+</div>
+</div>
 
-<?php
-if ($_POST) {
-    echo '<pre>';
-    echo htmlspecialchars(print_r($_POST, true));
-    echo '</pre>';
-}
-?>
-
-
-<fieldset>
-    <legend>Тестовая форма, пример 4</legend>
-
+<div class="spoiler_v2">
+<a href="#" class="spoiler-trigger"><span>Тестовая форма, пример n</span></a>
+<div class="spoiler-block">
 <form name="form1" method="post" action="script.php">
 <p><span>Текстовое поле: </span>
 <input type="text" name="textfield">
@@ -147,20 +213,9 @@ if ($_POST) {
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Очистить форму">
 </p>
 </form>
-</fieldset>
+</div>
+</div>
 
-
-<fieldset>
-    <legend>5</legend>
-<form action="action.php" method="post">
- <p>Ваше имя: <input type="text" name="name" /></p>
- <p>Ваш возраст: <input type="text" name="age" /></p>
- <p><input type="submit" /></p>
-</form>
-</fieldset    
-
-
-<a href="1104.php" target="_blank">11/04</a>
 
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
