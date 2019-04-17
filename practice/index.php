@@ -5,10 +5,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/scripts.php"); ?>
 </head>
 <body>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/header.php"); ?>
 <div class="contet txt">
 <h1>Практика</h1>
 <p>Несколько страцин с моей практикой JS, PHP и пр.</p>
@@ -18,9 +18,10 @@
 <li><a href="/practice/forms/">Будем делать форму</a></li>
 <li><a href="/practice/4php/">Тестируем PHP</a></li>
 <li><a href="/practice/db/">БД и SQL запросы</a></li>
+<li><a href="/practice/other/">Разное</a></li>
 </ul>
 
 </div>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
 </body>
 </html>

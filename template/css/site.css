@@ -120,6 +120,10 @@ a:hover {
 	object-fit: cover;
     max-width: 32%;
 }
+.alone_img {
+  display: block;
+  margin: 10px auto;
+}
 .footer {
 	background-color: #dcdbdb;
     border: 2px solid #61380b;
@@ -514,4 +518,29 @@ height: 20px;
 vertical-align: top;
 padding: 10px;
 margin: 10px;
+}
+pre {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+	font-family: monospace,monospace;
+    font-size: 1em;
+}
+pre code {
+    display: block;
+    padding: 17px 20px 20px;
+    border: 1px solid #e5e8ec;
+    background: #fbfdff;
+    font-size: 14px;
+    font-family: Menlo,Monaco,'Courier New',monospace;
+	word-break: break-all;
+}
+.hljs-number {
+    color: #986801;
+}
+.hljs-keyword {
+    color: #a626a4;
 }
