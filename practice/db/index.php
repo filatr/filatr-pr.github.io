@@ -311,7 +311,7 @@ if(isset($_GET['id']))
 }
 // закрываем подключение
 mysqli_close($link);
-
+//truncate
 
 ?>
 
