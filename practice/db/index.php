@@ -26,7 +26,10 @@
 <li><a href="https://htmlweb.ru/php/mysql.php" target="_blank">Связь с базами данных MySQL</a></li>
 <li><a href="https://metanit.com/web/php/7.5.php" target="_blank">Получение данных</a></li>
 </ul>
-
+<!-- 
+    http://www.skillz.ru/dev/php/article-Obyasnenie_SQL_obedinenii_JOIN_INNER_OUTER.html
+https://anton-pribora.ru/articles/mysql/mysql-join/
+-->
 <h2>Теория</h2>
 <h3>Подключение к БД</h3>
 <pre>
@@ -162,7 +165,15 @@ INSERT INTO tablica2(id, age) VALUE (3, "30");
 <p>Оператор JOIN используется для соединения двух или нескольких таблиц. Соединение таблиц может быть внутренним (INNER) или внешним (OUTER), причем внешнее соединение может быть левым (LEFT), правым (RIGHT) или полным (FULL). Далее на примере двух таблиц рассмотрим различные варианты их соединения.</p>
 <p><span class="like_b">Предикат</span> определяет условие соединения строк из разных таблиц.</p>
 
+<!--
 
+SELECT user.name , user_datail_info.detail
+FROM user
+INNER JOIN user_datail_info ON user.id = user_datail_info.user_id
+
+
+
+-->
 <p><a href="http://2sql.ru/novosti/sql-inner-join/" target="_blank">Оператор SQL INNER JOIN</a></p>
 <p><a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank">SQL Joins</a></p>
 <hr>
