@@ -28,6 +28,24 @@
 </ul>
 
 <h2>Теория</h2>
+<h3>Подключение к БД</h3>
+<pre>
+<code>
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "new_bd";
+
+// Создание подключения
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Проверка подключения
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
+</code>
+</pre>
 
 <p>Подключение к БД: mysqli_connect(хост, пользователь, пароль, название БД)</p>
 <p>После выполенения скрыпта закрыть соединение к БД: mysqli_close();</p>
@@ -35,6 +53,14 @@
 <p>Чтобы <span class="like_b">создать</span> таблицу, нам надо использовать выражение SQL "CREATE TABLE 'название таблицы'"</p>
 <p>Чтобы <span class="like_b">удалить</span> таблицу, нам надо использовать выражение SQL "DROP TABLE 'название таблицы'"</p>
 <p>Чтобы <span class="like_b">добавить данные</span> в таблицу, нам надо использовать SQL "INSERT" (<span class="like_i">INSERT INTO tovars VALUES(NULL, 'Samsung Galaxy III','Samsumg')</span>)</p>
+<!--
+INSERT INTO tablica1(id, name) VALUE (1, "Валентин");
+INSERT INTO tablica1(id, name) VALUE (2, "Николай");
+INSERT INTO tablica1(id, name) VALUE (3, "Василий");
+INSERT INTO tablica2(id, age) VALUE (1, "28");
+INSERT INTO tablica2(id, age) VALUE (2, "29");
+INSERT INTO tablica2(id, age) VALUE (3, "30");
+-->
 <p>mysqli_real_escape_string() - защита со стороны скрипта (SQL-инъекции)</p>
 <p>Чтобы <span class="like_b">получить данные</span> из таблици, нам надо использовать SQL "SELECT" (<span class="like_i">SELECT * FROM tovars)</span>)</p>
 <p>mysqli_num_rows() - узнаем количество строк</p>

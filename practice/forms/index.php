@@ -90,6 +90,7 @@ if(isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])){
     mysqli_close($link);
 }
 ?>
+<hr>
 <fieldset>
     <legend>Пример 2</legend>
 <form method="post">
@@ -102,7 +103,26 @@ if(isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])){
 <input type="submit" value="Добавить">
 </form>
 </fieldset>
+<hr>
 
+<p>Нобелевская премия</p>
+
+
+
+<fieldset>
+    <legend>Награды</legend>
+<form action="nobel_prize_forms.php" method="post">
+<p>Введите день:<br> 
+<input type="text" name="day" /></p>
+<p>Введите месяц:<br> 
+<input type="text" name="month" /></p>
+<p>Введите год:<br> 
+<input type="text" name="year" /></p>
+<input type="submit" value="Добавить">
+</form>
+</fieldset>
+
+<hr>
 <br>
 <div class="spoiler_v2">
 <a href="#" class="spoiler-trigger"><span>Пример n</span></a>
