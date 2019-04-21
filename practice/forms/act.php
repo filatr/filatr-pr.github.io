@@ -5,10 +5,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
 </head>
 <body>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet txt">
 <p><a href="/practice/forms/">Назад</a></p>
 <h2>Результат выполнения формы "пример 1" из занесением в БД</h2>
@@ -65,6 +65,6 @@ $conn->close();
 <br><br><br><br><br><br><br><br><br>
 <p><a href="/practice/forms/">Назад</a></p>
 </div>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>
 </html>

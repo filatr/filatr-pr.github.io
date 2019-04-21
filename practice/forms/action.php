@@ -5,10 +5,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
 </head>
 <body>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet txt">
 <h1>Спасибо за ответ</h1>
 
@@ -18,6 +18,6 @@
 
 
 </div>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>
 </html>

@@ -5,10 +5,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="PHP. Просто PHP. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
 </head>
 <body>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet">
 <h1>Немного PHP</h1>
 <p><a href="https://www.php.net/manual/ru/" target="_blank">Мануалы по PHP</a></p>
@@ -83,6 +83,6 @@ var_dump
 
 
 </div>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>
 </html>

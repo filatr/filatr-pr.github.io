@@ -5,10 +5,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
 </head>
 <body>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet txt">
 <h1>БД и SQL запросы</h1>
 <p><a href="/phpmyadmin/" target="_blank">phpmyadmin</a></p>
@@ -29,6 +29,8 @@
 <!-- 
     http://www.skillz.ru/dev/php/article-Obyasnenie_SQL_obedinenii_JOIN_INNER_OUTER.html
 https://anton-pribora.ru/articles/mysql/mysql-join/
+http://moonexcel.com.ua/уроки-sql14-создание-таблиц-create-table_ru
+
 -->
 <h2>Теория</h2>
 <h3>Подключение к БД</h3>
@@ -146,6 +148,22 @@ INSERT INTO tablica2(id, age) VALUE (3, "30");
     <li>Многие ко многим</li>
     <li>Связь с самим собой</li>
 </ul>
+
+<div class="spoiler_v2">
+<a href="#" class="spoiler-trigger"><span>Пример</span></a>
+<div class="spoiler-block">
+<p>Допустим создаем БД описывающее работу какой-то школы</p>
+	<ol>
+		<li>Каждая школа гарантированно имеет 1-го директора. Это связь 1 к 1. 1 школа -> 1 директор</li>
+		<li>В каждой школе есть несколько классов это связь 1 ко многим. 1 школа -> много классов</li>
+		<li>Теперь учителя предметники. Если попробовать составить таблицу отношений учителей с классами то получим довольно сложную картину: 1 учитель может преподавать в нескольких классах, в то же самое время в одном классе может преподавать несколько учителей. Это и есть классическое отношение многие ко многим. Несколько учителей <-> Несколько классов.</li>
+	</ol>
+<p>Как уже было верно сказано выше такие связи принято описывать промежуточной таблицей связи </p>
+</div>
+</div>
+
+
+
 <p>Когда данные выбираются из нескольких связанных таблиц, мы будем использовать запрос JOIN. Есть несколько типов присоединения, мы познакомимся с этими:</p>
 <ul>
     <li>Cross Joins (Перекрестное соединение)</li>
@@ -164,18 +182,20 @@ INSERT INTO tablica2(id, age) VALUE (3, "30");
 
 <p>Оператор JOIN используется для соединения двух или нескольких таблиц. Соединение таблиц может быть внутренним (INNER) или внешним (OUTER), причем внешнее соединение может быть левым (LEFT), правым (RIGHT) или полным (FULL). Далее на примере двух таблиц рассмотрим различные варианты их соединения.</p>
 <p><span class="like_b">Предикат</span> определяет условие соединения строк из разных таблиц.</p>
-
-<!--
-
+<pre>
+<code>
 SELECT user.name , user_datail_info.detail
 FROM user
 INNER JOIN user_datail_info ON user.id = user_datail_info.user_id
+</code>
+</pre>
 
+<ul>
+<li><a href="http://2sql.ru/novosti/sql-inner-join/" target="_blank">Оператор SQL INNER JOIN</a></li>
+<li><a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank">SQL Joins</a></li>
+<li><a href="https://ru.stackoverflow.com/questions/633789/Как-связать-3-таблицы-в-sql-запросе" target="_blank">Как связать 3 таблицы в SQL запросе?</a></li>
+</ul>
 
-
--->
-<p><a href="http://2sql.ru/novosti/sql-inner-join/" target="_blank">Оператор SQL INNER JOIN</a></p>
-<p><a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank">SQL Joins</a></p>
 <hr>
 
 <h3>EXPLAIN</h3>
@@ -255,8 +275,14 @@ Extra:
 
 <hr>
 <h2>Практика</h2>
+
+		<ul>
+			<li><a href="/practice/db/homework.php">Практика и ДЗ</a></li>
+		</ul>
+
+
 <p>Пример 1: вывод данных, полученых в <a href="/practice/forms/#forma1" target="_blank">форме 1</a></p>
-<?php require_once ("{$_SERVER['DOCUMENT_ROOT']}template/inc/connection.php"); // подключаем скрипт
+<?php require_once ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/connection.php"); // подключаем скрипт
 
 $link = mysqli_connect($servername, $username, $password, $dbname) 
     or die("Ошибка " . mysqli_error($link)); 
@@ -351,18 +377,6 @@ mysqli_close($link);
 //truncate
 
 ?>
-
-<h4>Пример 3</h4>
-
-Блок 1, Учёные
-Ньютон Исаак, Ілля Мечников, Зельман Ваксман, Йосеф Шмуель Аґнон, Саймон (Семен) Кузнець, Роальд Гофман, Георгій Харпак, Світлана Алексієвич
-
-Блок 2, наука
-фізіологія та медицина, література, економіка, хімія, фізика, 
-
-Блок 3, твори
-
-
 <ul>
 <li><a href="/admin/">Админ'ка</a></li>
 </ul>

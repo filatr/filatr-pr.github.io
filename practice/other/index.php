@@ -5,10 +5,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
 </head>
 <body>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet txt">
 <h1>Разное</h1>
 <p>Источники</p>
@@ -21,6 +21,10 @@
 	</li>
 	<li><a href="https://losst.ru/kak-polzovatsya-curl" target="_blank">Как пользоваться curl</a></li>
 	<li><a href="https://developer.mozilla.org/ru/docs/Web/HTTP/Session" target="_blank">HTTP сессия</a></li>
+    <li><a href="https://www.php.net/manual/ru/session.examples.basic.php" target="_blank">Основы использования</a></li>
+    <li><a href="http://www.php.su/articles/?cat=examples&page=070" target="_blank">Сессии в PHP</a></li>
+    <li><a href="http://www.softtime.ru/bookphp/gl8_1.php" target="_blank">Сессии и cookie в PHP</a></li>
+    <li><a href="https://www.php.net/manual/ru/features.cookies.php" target="_blank">Cookies</a></li>
 </ul>
 <hr>
 <h2>cURL</h2>
@@ -36,14 +40,22 @@
 <p>cURL — это не офлайн-браузер типа HTTrack и не может целиком загрузить содержимое сайта.</p>
 <hr>
 <h2>Сессия</h2>
-<p>Так как HTTP — это клиент-серверный протокол, HTTP сессия состоит из трёх фаз:</p>
-	<ol>
-		<li>Клиент устанавливает TCP соединения (или другое соединение, если не используется TCP транспорт).</li>
-		<li>Клиент отправляет запрос и ждёт ответа.</li>
-		<li>Сервер обрабатывает запрос и посылает ответ, в котором содержится код статуса и соответствующие данные.</li>
-	</ol>
-<p>Начиная с версии HTTP/1.1, после третьей фазы соединение не закрывается, так как клиенту позволяется инициировать другой запрос. То есть, вторая и третья фазы могут повторяться.</p>
+
+    <ul>
+<li><a href="https://www.php.net/manual/ru/session.examples.basic.php" target="_blank">Основы использования</a></li>
+<li><a href="http://www.php.su/articles/?cat=examples&page=070" target="_blank">Сессии в PHP</a></li>
+    <li><a href="http://www.softtime.ru/bookphp/gl8_1.php" target="_blank">Сессии и cookie в PHP</a></li>
+    </ul>
+
+    <p>Веб-сервер не поддерживает постоянного соединения с клиентом, и каждый запрос обрабатывается, как новый, без связи с предыдущими.</p>
+
+    <p>То есть, нельзя ни отследить запросы от одного и того же посетителя, ни сохранить для него переменные между просмотрами отдельных страниц. Вот для решения этих двух задач и были изобретены сессии.
+        Собственно, сессии, если в двух словах - это механизм, позволяющий однозначно идентифицировать браузер и создающий для этого браузера файл на сервере, в котором хранятся переменные сеанса.</p>
+
 <hr>
+    <h2>Cookies</h2>
+    <p>Cookies - это механизм хранения данных браузером удаленной машины для отслеживания или идентификации возвращающихся посетителей.</p>
+    <ul><li><a href="https://www.php.net/manual/ru/features.cookies.php" target="_blank">Cookies</a></li></ul>
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
 </body>

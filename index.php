@@ -24,7 +24,11 @@
 	<li><a href="/practice/4php/">Ломаем PHP</a>
 		<ul><li><a href="/practice/forms/">Разбираем формы</a></li></ul>
 	</li>
-	<li><a href="/practice/db/">БД и SQL запросы</a></li>
+	<li><a href="/practice/db/">БД и SQL запросы</a>
+		<ul>
+			<li><a href="/practice/db/homework.php">Практика и ДЗ</a></li>
+		</ul>
+	</li>
 	<li>и пр.</li>
 </ul>
 </div>

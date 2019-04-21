@@ -5,13 +5,13 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/scripts.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
 </head>
 <body>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/header.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <div class="contet txt">
 <?php
-require_once ("{$_SERVER['DOCUMENT_ROOT']}template/inc/connection.php"); // подключаем скрипт
+require_once ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/connection.php"); // подключаем скрипт
 
 $link = mysqli_connect($servername, $username, $password, $dbname) 
         or die("Ошибка " . mysqli_error($link)); 
@@ -68,6 +68,6 @@ mysqli_close($link);
 
 ?>
 </div>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
+<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>
 </html>
