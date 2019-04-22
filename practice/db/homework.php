@@ -127,17 +127,15 @@ mysqli_close($link);
 
 <?php require_once ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/connection.php"); // подключаем скрипт
 
-
-
 $link = mysqli_connect($servername, $username, $password, $dbname) 
     or die("Ошибка " . mysqli_error($link)); 
     $link->set_charset("utf8");
 
 $query ="
 SELECT school_class.class, school_teacher.teachers, school_subject.subjects
-FROM (school_class
+FROM school_class
 INNER JOIN school_subject
-ON school_class.id_subject = school_subject.id)
+ON school_class.id_subject = school_subject.id
 INNER JOIN school_teacher
 ON school_subject.id_teacher = school_teacher.id
 ORDER BY school_class.id
@@ -151,7 +149,7 @@ if($result)
      
     echo "<table class=\"tbl_1\"><tr>
 	<th>Класс</th>
-	<th>Учитель</div>
+	<th>Учитель</th>
 	<th>Предмет</th>
 	</tr>";
     for ($i = 0 ; $i < $rows ; ++$i)
@@ -163,29 +161,11 @@ if($result)
     }
      echo "</table>";
     // очищаем результат
+	//var_dump ($result);
     mysqli_free_result($result);
 }
 
-
-
 mysqli_close($link);
-
-/*
-SELECT DISTINCT группы.`Преподаватель` , 
-   список.`Учебная группа` , список.`курс` 
-FROM группы, список
-WHERE группы.`Учебная группа` = список.`Учебная группа` 
-AND курс <3
-*/
-
-
-
-/*Оператор SQL DISTINCT используется для указания на то, что следует работать только с уникальными значениями столбца.
-
-Оператор SQL DISTINCT нашел широкое применение в операторе SQL SELECT, для выборки уникальных значений. Так же используется в агрегатных функциях.
-
-Оператор SQL DISTINCT имеет следующий синтаксис:
-SELECT DISTINCT column_name FROM table_name*/
 
  ?>
 </div>
