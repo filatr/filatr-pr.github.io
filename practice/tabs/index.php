@@ -27,7 +27,18 @@
 </div>
 
 <p><a href="http://shpargalkablog.ru/2012/03/css-tabs.html">Источник</a></p>
+<?php
+session_start();
 
+
+  // Выводим содержимое суперглобального массива $_SESSION
+
+  
+  echo $_SESSION['username'].' , ты пришел на другую страницу этого сайта!';
+
+  echo("<br>");
+
+?>
 </div>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 </body>

@@ -93,13 +93,13 @@ if(isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])){
 <hr>
 <fieldset>
     <legend>Пример 2</legend>
-<form method="post">
+<form method="post" action="action.php">
 <p>Введите день:<br> 
-<input type="text" name="day" /></p>
+<input type="text" name="name" /></p>
 <p>Введите месяц:<br> 
-<input type="text" name="month" /></p>
+<input type="password" name="password" /></p>
 <p>Введите год:<br> 
-<input type="text" name="year" /></p>
+<input type="email" name="email" /></p>
 <input type="submit" value="Добавить">
 </form>
 </fieldset>

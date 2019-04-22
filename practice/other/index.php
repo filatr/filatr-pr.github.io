@@ -1,14 +1,28 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<?php
+//session_start();
+//$_SESSION['username'] = "maksim";
+setcookie('counter', 1);
+//header('location: /practice/index.php');
+//echo 'Вы посетили эту страницу '.$_COOKIE['counter'].' раз';
+
+//https://www.php.net/manual/ru/features.cookies.php
+//http://www.softtime.ru/bookphp/gl8_2.php
+// Работает, если сессионная cookie принята
+//echo '<br /><a href="/practice/">page 1</a>';
+//echo '<br /><a href="/practice/tabs">page 2</a>';
+
+
+?>
 <html>
     <head>
 		<title>Разное</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
 		<meta name="robots" content="index, follow">
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/scripts.php"); ?>
+
 </head>
 <body>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
+
 <div class="contet txt">
 <h1>Разное</h1>
 <p>Источники</p>
@@ -56,7 +70,8 @@
     <h2>Cookies</h2>
     <p>Cookies - это механизм хранения данных браузером удаленной машины для отслеживания или идентификации возвращающихся посетителей.</p>
     <ul><li><a href="https://www.php.net/manual/ru/features.cookies.php" target="_blank">Cookies</a></li></ul>
+
+
 </div>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}template/inc/footer.php"); ?>
 </body>
 </html>
