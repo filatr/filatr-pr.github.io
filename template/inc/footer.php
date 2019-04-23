@@ -1,4 +1,6 @@
-﻿<div class="footer">
+﻿
+</div>
+<div class="footer">
 <div class="blco stat_blco">
 <p>With love to Ukraine</p>
 </div>
@@ -11,6 +13,7 @@
 <p>&copy; free for all</p>
 </div>
 <div class="clear"></div>
-<div class="u_use"><?php echo $_SERVER['HTTP_USER_AGENT']; ?></div>
 
 </div>
+</body>
+</html>
