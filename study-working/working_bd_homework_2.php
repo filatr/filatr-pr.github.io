@@ -157,13 +157,51 @@ if($result)
 
 mysqli_close($link);
 
+echo 
+'
+<p>Запрос к БД имеет следующий вид:</p>
+<pre>
+<code>
+SELECT school_class.class, school_teacher.teachers, school_subject.subjects
+FROM school_class
+INNER JOIN school_subject
+ON school_class.id_subject = school_subject.id
+INNER JOIN school_teacher
+ON school_subject.id_teacher = school_teacher.id
+ORDER BY school_class.id
+</code>
+</pre>
+<p>А PHP\'ый вывод этого результата:</p>
+<pre>
+<code>
+$result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
 
+if($result)
+{
+    $rows = mysqli_num_rows($result); // количество полученных строк
+     
+    echo "<table class=\"tbl_1\"><tr>
+	<th>Класс</th>
+	<th>Учитель</th>
+	<th>Предмет</th>
+	</tr>";
+    for ($i = 0 ; $i < $rows ; ++$i)
+    {
+        $row = mysqli_fetch_row($result);
+        echo "<tr>";
+            for ($j = 0 ; $j < 3 ; ++$j) echo "<td>$row[$j]</td>";
+        echo "</tr>";
+    }
+     echo "</table>";
+    // очищаем результат
+	//var_dump ($result);
+    mysqli_free_result($result);
+}
 
-
-
-
-
-
+mysqli_close($link);
+</code>
+</pre>
+';
 
 
 

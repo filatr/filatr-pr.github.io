@@ -25,7 +25,7 @@
 <ul>
 <li><a href="/study-working/working_form_examples.php">Отправляем данные с формы в БД</a> (см.пр. PHP)</li>
 <li><a href="/study-working/working_bd_homework_1.php">Вывод данных из БД, редактирование</a> (см.пр. PHP)</li>
-<li><a href="/study-working/working_bd_homework_2.php">ВЫвод данных из 3х таблиц в 4ю</a> (см.пр. PHP)</li>
+<li><a href="/study-working/working_bd_homework_2.php">Вывод данных из 3х таблиц в 4ю</a> (см.пр. PHP)</li>
 </ul>
 <hr>
 <h2>GitHub и командная строка</h2>

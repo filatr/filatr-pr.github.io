@@ -552,16 +552,19 @@ pre code {
   margin: 0 10px;
   border-collapse: collapse;
   padding: 10px;
-  /*width: 20%;*/
+  width: 30%;
 }
 .our_school table td, .our_school table th {
   border: 1px solid #000;
   text-align: center;
   padding: 10px;
-  width: 150px;
+  width: 30%;
 }
 .tbl_1 {
   border-collapse: collapse;
+  margin: 0 auto;
+	width: 50%;
+	text-align: center;
 }
 .tbl_1 td,.tbl_1 th {
   border: 1px solid #000;
