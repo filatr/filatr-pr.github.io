@@ -114,6 +114,8 @@ strpos<br>
 <li><a href="http://archive-ipq-co.narod.ru/l1/regexp.html" target="_blank">Регулярные выражения</a></li>
 <li><a href="http://www.cyberforum.ru/php-regex/thread631382.html" target="_blank">Памятка по регулярным выражениям PCRE в PHP </a></li>
 <li><a href="http://forum.php.su/forums.php?forum=4" target="_blank">Форумы портала PHP.SU » PHP » Регулярные выражения</a></li>
+<li><a href="http://www.php.su/articles/?cat=regexp&page=008" target="_blank">Регулярные выражения (шаблоны)</a></li>
+<li><a href="https://www.internet-technologies.ru/articles/regulyarnye-vyrazheniya-php.html" target="_blank">Регулярные выражения PHP</a></li>
 </ul>
 <h3>Функции PCRE</h3>
 
