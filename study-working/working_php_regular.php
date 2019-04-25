@@ -35,7 +35,9 @@ echo '<br><hr>';
 
 $myResult = array_values($match);
 
-echo $myResult;
+
+// regex100.com
+//echo $myResult;
 /*
 echo '<br><hr>';
 
