@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="259804d0-9d66-4b51-8f1b-f2da837391b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-theory/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-theory/theory-bd-sql.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-theory/theory-forms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-theory/theory-github.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-theory/theory-js.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-theory/theory-other.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-theory/theory-php.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/act.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/action.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_bd_homework_1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_bd_homework_2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_cookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_form_examples.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_github.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_js_ function.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_js_calc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_js_final_assignment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_js_objects.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_js_objects_this.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_php_0804.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_php_other.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/working_php_regular.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-working/zapis_v_file.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/inc/0.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/inc/meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/inc/meta.php" afterDir="false" />
-    </list>
+    <list default="true" id="259804d0-9d66-4b51-8f1b-f2da837391b3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +12,12 @@
     <session id="-1715898056">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.65" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -107,6 +75,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,7 +92,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,16 +125,17 @@
       <workItem from="1556389883770" duration="176000" />
       <workItem from="1556519996569" duration="146000" />
       <workItem from="1556628834164" duration="171000" />
+      <workItem from="1556632254481" duration="25000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="493000" />
+    <option name="totallyTimeSpent" value="518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
