@@ -8,8 +8,8 @@
 <p>Разбираем PHP, JS, sql и другие сопутсвующие технологии</p>
 
 <ul>
-<li><a href="/study-theory/">Теория</a></li>
-<li><a href="/study-working/">Практика</a></li>
+<li><a href="/study_theory/">Теория</a></li>
+<li><a href="/study_working/">Практика</a></li>
 </ul>
 
 <!--<p>Тут у нас:</p>

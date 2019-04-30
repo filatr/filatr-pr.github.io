@@ -2,166 +2,99 @@
 if ($_SERVER['REQUEST_URI']=='/') {
 	$title = "Песочница";
 }
-elseif ($_SERVER['REQUEST_URI']=='/study-theory/') {
+elseif ($_SERVER['REQUEST_URI']=='/study_theory/') {
 	$title = "Теория";
 }
-elseif ($_SERVER['REQUEST_URI']=='/study-theory/theory-js.php') {
+elseif ($_SERVER['REQUEST_URI']=='/study_theory/theory_js.php') {
 	$title = "JS: теория";
 }
-elseif ($_SERVER['REQUEST_URI']=='/study-theory/theory-php.php') {
+elseif ($_SERVER['REQUEST_URI']=='/study_theory/theory_php.php') {
 	$title = "PHP: теория";
 }
-elseif ($_SERVER['REQUEST_URI']=='/study-theory/theory-bd-sql.php') {
+elseif ($_SERVER['REQUEST_URI']=='/study_theory/theory_bd_sql.php') {
 	$title = "БД и SQL запросы";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_theory/theory_forms.php') {
+	$title = "Формы: теория";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_theory/theory_github.php') {
+	$title = "Заметки о командной строке";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_theory/theory_other.php') {
+	$title = "Разное";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/') {
+	$title = "Практика";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/act.php') {
+	$title = "act";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/action.php') {
+	$title = "action";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/script.php') {
+	$title = "script";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_bd_homework_1.php') {
+	$title = "Практика с БД";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_bd_homework_2.php') {
+	$title = "Практика с БД";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_cookies.php') {
+	$title = "Сессии и Cookies";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_form_examples.php') {
+	$title = "Формы";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_github.php') {
+	$title = "Работаем в комендной строке с текстовым редактором nano";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_js_ function.php') {
+	$title = "Юзаем function";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_js_calc.php') {
+	$title = "Простейший калькулятор";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_js_final_assignment.php') {
+	$title = "Итоговое дз по JS";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_js_objects.php') {
+	$title = "Обекты";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_js_objects_this.php') {
+	$title = "Расматриваем на практике this";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_0804.php') {
+	$title = "Первое практическое знакомство с PHP";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_other.php') {
+	$title = "Первое практическое знакомство с PHP";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_cycle.php') {
+	$title = "Практикум по цыклам";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_regular.php') {
+	$title = "Регулярные выражения";
 }
-elseif ($_SERVER['REQUEST_URI']=='/') {
-	$title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_file_system.php') {
+	$title = "Работа с файловой системой";
 }
-else $title = "Песочница";
+elseif ($_SERVER['REQUEST_URI']=='/admin/') {
+	$title = "Админка";
+}
+elseif ($_SERVER['REQUEST_URI']=='/links/') {
+	$title = "Ссылки";
+}
+elseif ($_SERVER['REQUEST_URI']=='/oop/') {
+	$title = "Объектно-ориентированное программирование";
+}
+else
+$title = "Песочница";
+$description = "Песочница. Просто песочница. Проходи дальше";
+$keywords = "песочница, PHP, SQL, JavaScript, HTML, CSS, практика, теория";
+$robots = "index, follow";
 
-/*switch ($_SERVER['REQUEST_URI']) {
-		case "/":
-			$title = "Песочница";
-		break;
-		case "/study-theory/":
-			$title = "Теория";
-		break;
-		case "/study-theory/theory-js.php":
-			$title = "JS: теория";
-		break;
-		case "/study-theory/theory-php.php":
-			$title = "PHP: теория";
-		break;
-		case "/study-theory/theory-bd-sql.php":
-			$title = "БД и SQL запросы";
-		break;
-		case "/study-theory/theory-forms.php":
-			$title = "Формы: теория";
-		break;
-		case "/study-theory/theory-github.php":
-			$title = "Заметки о командной строке";
-		break;
-		case "/study-theory/theory-other.php":
-			$title = "Разное";
-		break;
-		case "/study-working/":
-			$title = "Практика";
-		break;
-		case "/study-working/act.php":
-			$title = "act";
-		break;
-		case "/study-working/action.php":
-			$title = "action";
-		break;
-		case "/study-working/script.php":
-			$title = "script";
-		break;
-		case "/study-working/working_bd_homework_1.php":
-		case "/study-working/working_bd_homework_2.php":
-			$title = "Практика с БД";
-		break;
-		case "/study-working/working_cookies.php":
-			$title = "Сессии и Cookies";
-		break;
-		case "/study-working/working_form_examples.php":
-			$title = "Формы";
-		break;
-		case "/study-working/working_github.php":
-			$title = "Работаем в комендной строке с текстовым редактором nano";
-		break;
-		case "/study-working/working_js_ function.php":
-			$title = "Юзаем function";
-		break;
-		case "/study-working/working_js_calc.php":
-			$title = "Простейший калькулятор";
-		break;
-		case "/study-working/working_js_final_assignment.php":
-			$title = "Итоговое дз по JS";
-		break;
-		case "/study-working/working_js_objects.php":
-			$title = "Обекты";
-		break;
-		case "/study-working/working_js_objects_this.php":
-			$title = "Расматриваем на практике this";
-		break;
-		case "/study-working/working_php_0804.php":
-			$title = "Первое практическое знакомство с PHP";
-		break;
-		case "/study-working/working_php_other.php":
-			$title = "Первое практическое знакомство с PHP";
-		break;
-		case "/study-working/working_php_regular.php":
-			$title = "Регулярные выражения";
-		break;
-		case "/admin/":
-			$title = "Админка";
-		break;
-		case "/links/":
-			$title = "Ссылки";
-		break;
-	}*/
+
 ?>
 	

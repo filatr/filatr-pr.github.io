@@ -25,6 +25,46 @@ include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 
 
 <?php
+	// Тут выполняется подключение к базе данных, для краткости здесь и далее опущу
+	require_once ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/connection.php"); // подключаем скрипт
+
+$link = mysqli_connect($servername, $username, $password, $dbname) 
+    or die("Ошибка " . mysqli_error($link)); 
+     $link->set_charset("utf8");
+	 
+	// Если форма авторизации отправлена...
+	if (!empty($_POST['password']) and !empty($_POST['login'])) {
+		
+		// Пишем логин и пароль из формы в переменные для удобства работы:
+		$login = $_POST['login'];
+		$password = $_POST['password'];
+		
+		// Формируем и отсылаем SQL запрос:
+		$query = "SELECT * FROM users WHERE login='$login' AND password='$password'";
+		$result = mysqli_query($link, $query);
+		
+		// Преобразуем ответ из БД в нормальный массив PHP:
+		$user = mysqli_fetch_assoc($result);
+		
+		if (!empty($user)) {
+			// Пользователь прошел авторизацию, выполним какой-то код
+			echo "Привет, пользователь " . $login . "<style>form {display:none;}</style>";
+		} else {
+			// Пользователь неверно ввел логин или пароль, выполним какой-то код
+		}
+	}
+?>
+<form action="" method="POST">
+	<input name="login">
+	<input name="password" type="password">
+	<input type="submit" value="Отправить">
+</form>
+
+
+<?php
+
+
+
 /* if (isset($_COOKIE['cookie'])) {
     foreach ($_COOKIE['cookie'] as $name => $value) {
         echo "$name : $value <br>";
@@ -53,21 +93,6 @@ print_r($_COOKIE);
 echo "<br><hr>";
 
 */
-require_once ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/connection.php"); // подключаем скрипт
-
-$link = mysqli_connect($servername, $username, $password, $dbname) 
-    or die("Ошибка " . mysqli_error($link)); 
-     $link->set_charset("utf8");
-$query ="SELECT * FROM users";
-$result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
-
-
-// тут скрипт: авторизовать пользователя
-
-
-
-// тут скрипт
-mysqli_close($link);
 
 include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 <?php //include '../template/inc/footer.php'; ?>

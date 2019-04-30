@@ -269,7 +269,7 @@
 </div>
 <hr>
 <h2>Практика</h2>
-<p><a href="/study-working/working_github.php">Домашний практикум с текстовым редактором nano</a></p>
+<p><a href="/study_working/working_github.php">Домашний практикум с текстовым редактором nano</a></p>
 <hr>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 <?php //include '../template/inc/footer.php'; ?>

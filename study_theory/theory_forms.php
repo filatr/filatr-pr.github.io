@@ -36,9 +36,9 @@
 
 <h2>Практика</h2>
 <ul>
-	<li><a href="/study-working/working_form_examples.php">Примеры форм</a></li>
-	<li><a href="/study-working/working_bd_homework_1.php">Домашка 1</a></li>
-	<li><a href="/study-working/working_bd_homework_2.php">Домашка 2</a></li>
+	<li><a href="/study_working/working_form_examples.php">Примеры форм</a></li>
+	<li><a href="/study_working/working_bd_homework_1.php">Домашка 1</a></li>
+	<li><a href="/study_working/working_bd_homework_2.php">Домашка 2</a></li>
 </ul>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 <?php //include '../template/inc/footer.php'; ?>

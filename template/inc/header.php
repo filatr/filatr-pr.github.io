@@ -10,10 +10,11 @@ include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/meta.php");
     <head>
 		<title><?php echo $title; ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description"  content="Песочница. Просто песочница. Проходи дальше" />
-		<meta name="robots" content="index, follow">
-        <link rel="icon" href="/template/favicon.ico" type="image/x-icon" />  
-		<link rel="shortcut icon" href="/template/favicon.ico" type="image/x-icon">
+		<meta name="description"  content="<?php echo $description ?>" />
+		<meta name="keywords" content="<?php echo $keywords ?>" />
+		<meta name="robots" content="<?php echo $robots ?>">
+        <link rel="icon" href="../template/favicon.ico" type="image/x-icon" />  
+		<link rel="shortcut icon" href="../template/favicon.ico" type="image/x-icon">
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="/template/inc/js/js.js" type="text/javascript"></script>
 		<link href="/template/css/site.css" media="screen" rel="stylesheet" type="text/css" />
@@ -22,10 +23,10 @@ include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/meta.php");
 <div class="header">
 	<ul id="main_menu">
 		<li><a href="/">Главная / main</a></li>
-		<li><a href="/study-theory/">Теория</a></li>
-		<li><a href="/study-working/">Практика</a></li>
+		<li><a href="/study_theory/">Теория</a></li>
+		<li><a href="/study_working/">Практика</a></li>
+		<li><a href="/oop/">ООП</a></li>
 		<li><a href="/links/">Полезные ссылки</a></li>
-		<li><a href="/admin/">Админка</a><li>
 	</ul>
 <div class="clear"></div>
 <div class="spin"></div>

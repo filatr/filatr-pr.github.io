@@ -1,6 +1,6 @@
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 
-<p><a href ="/study-working/working_form_examples.php">Назад</a></p>
+<p><a href ="/study_working/working_form_examples.php">Назад</a></p>
 <h2>Результат выполнения формы "пример 1" из занесением в БД</h2>
 <?php
 $servername = "localhost";
@@ -50,5 +50,5 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 ?>
 
-<p><a href ="/study-working/working_form_examples.php">Назад</a></p>
+<p><a href ="/study_working/working_form_examples.php">Назад</a></p>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>

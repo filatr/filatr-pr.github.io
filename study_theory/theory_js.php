@@ -92,13 +92,13 @@
 <h2>Практика</h2>
 
 <ol>
-<li><a href="/study-working/working_js_calc.php" target="_blank">Простейший калькулятор</a>, запукскается при заходе на стр</li>
-<li><a href="/study-working/working_js_function.php" target="_blank">Юзаем function</a></li>
-<li><a href="/study-working/working_js_objects.php" target="_blank">Юзаем objects</a>, запукскается при заходе на стр
-<ul><li><a href="/study-working/working_js_objects_this.php" target="_blank">Юзаем this</a></li></ul>
+<li><a href="/study_working/working_js_calc.php" target="_blank">Простейший калькулятор</a>, запукскается при заходе на стр</li>
+<li><a href="/study_working/working_js_function.php" target="_blank">Юзаем function</a></li>
+<li><a href="/study_working/working_js_objects.php" target="_blank">Юзаем objects</a>, запукскается при заходе на стр
+<ul><li><a href="/study_working/working_js_objects_this.php" target="_blank">Юзаем this</a></li></ul>
 </li>
 </ol>
-<p>Финальное домашнее <a href="/study-working/working_js_final_assignment.php" target="_blank">задание по JS</a></p>
+<p>Финальное домашнее <a href="/study_working/working_js_final_assignment.php" target="_blank">задание по JS</a></p>
 
 <hr>
 

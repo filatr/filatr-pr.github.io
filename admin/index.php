@@ -43,6 +43,7 @@ if(isset($_POST['login']) && isset($_POST['password']) && isset($_POST['email'])
 <form action="act.php" method="post">
  <p><input type="text" name="login" placeholder="Укажите логин" /></p>
  <p><input type="password" maxlength="25" name="password" placeholder="Укажите пароль"/></p>
+ <p>Запомнить меня?<input name="remember" type="checkbox" value="1"></p>
  <p><input type="submit" value="Вход" /></p>
 </form>
 </fieldset>

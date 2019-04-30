@@ -2,7 +2,7 @@
 <h1>Практика с БД</h1>
 
 
-<p>Пример 1: вывод данных, полученых в <a href="/study-working/working_form_examples.php#forma1" target="_blank">форме 1</a></p>
+<p>Пример 1: вывод данных, полученых в <a href="/study_working/working_form_examples.php#forma1" target="_blank">форме 1</a></p>
 <?php require_once ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/connection.php"); // подключаем скрипт
 
 $link = mysqli_connect($servername, $username, $password, $dbname) 
@@ -38,7 +38,7 @@ if($result)
 mysqli_close($link);
 
 ?>
-<p>Пример 2: скрипт редактирования данных, полученых в <a href="/study-working/working_form_examples.php#forma1" target="_blank">форме 1</a>. Ссылка на редактирование - см.в в примере выше</p>
+<p>Пример 2: скрипт редактирования данных, полученых в <a href="/study_working/working_form_examples.php#forma1" target="_blank">форме 1</a>. Ссылка на редактирование - см.в в примере выше</p>
 
 <?php
 
@@ -88,7 +88,7 @@ if(isset($_GET['id']))
             <input type='text' name='email' value='' /></p>
             <input type='submit' value='Сохранить'>
 			</form>
-			<p><a href=\"/study-working/working_bd_homework_1.php\">Вернутся назад</a></p>";
+			<p><a href=\"/study_working/working_bd_homework_1.php\">Вернутся назад</a></p>";
          
         mysqli_free_result($result);
     }
