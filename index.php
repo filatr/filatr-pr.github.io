@@ -12,23 +12,6 @@
 <li><a href="/study_working/">Практика</a></li>
 </ul>
 
-<!--<p>Тут у нас:</p>
-<ul>
-	<li><a href="/img0">Картинки</a> и то, что с ними модно творить</li>
-	<li>и <a href="/links/">несколько ссылок</a></li>
-	<li><a href="/github/">github</a></li>
-	<li><a href="/practice/4js/">Ломаем JS</a></li>
-	<li><a href="/practice/4php/">Ломаем PHP</a>
-		<ul><li><a href="/practice/forms/">Разбираем формы</a></li></ul>
-	</li>
-	<li><a href="/practice/db/">БД и SQL запросы</a>
-		<ul>
-			<li><a href="/practice/db/homework.php">Практика и ДЗ</a></li>
-		</ul>
-	</li>
-	<li>и пр.</li>
-</ul>
--->
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 <?php // https://prnt.sc/nfulsz
 //include '../template/inc/footer.php'; ?>

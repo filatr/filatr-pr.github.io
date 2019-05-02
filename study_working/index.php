@@ -18,7 +18,7 @@
 <li><a href="/study_working/working_form_examples.php">PHP в формах</a></li>
 <li>PHP в при работе с БД <a href="/study_working/working_bd_homework_1.php">Домашка 1</a></li>
 <li>PHP в при работе с БД <a href="/study_working/working_bd_homework_2.php">Домашка 2</a></li>
-<li><a href="/study_working/working_cookies.php">Первое практическое знакомство cессиями и  cookie</a></li>
+<li><a href="/study_working/working_cookies.php">Сессиии и  cookie</a></li>
 <li><a href="/study_working/working_php_regular.php">Регулярные выражения</a></li>
 <li><a href="/study_working/working_php_file_system.php">Работа с файловой системой</a></li>
 </ul>

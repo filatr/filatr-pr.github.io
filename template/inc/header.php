@@ -1,6 +1,6 @@
 ﻿<?php
 session_start();
-setcookie("myCookie", "HelloWorld", time()+360);
+
 
 include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/meta.php");
 
@@ -29,6 +29,10 @@ include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/meta.php");
 		<li><a href="/links/">Полезные ссылки</a></li>
 	</ul>
 <div class="clear"></div>
-<div class="spin"></div>
+	<div class="spin">
+<?php
+
+?>
+	</div>
 </div>
 <div class="contet">
