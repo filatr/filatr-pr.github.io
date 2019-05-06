@@ -1,4 +1,4 @@
-﻿<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
+﻿<?php include "../template/inc/header.php"; ?>
 <h1>Работаем в комендной строке с текстовым редактором nano</h1>
 <p>Последовательность моих действий при создании нового проекта и заливка его на Git</p>
 <ul>
@@ -23,5 +23,5 @@
 </ul>
 <p><a href="https://losst.ru/tekstovyj-redaktor-nano-v-linux-dlya-novichkov" target="_blank">Материал</a> в помощь</p>
 <hr>
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
-<?php //include '../template/inc/footer.php'; ?>
+<?php // https://prnt.sc/nl1yl3
+include "../template/inc/footer.php"; ?>
