@@ -175,29 +175,22 @@ ORDER BY school_class.id
 <pre>
 <code>
 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
-
-if($result)
-{
+if($result) {
     $rows = mysqli_num_rows($result); // количество полученных строк
-     
     echo "<table class=\"tbl_1\"><tr>
 	<th>Класс</th>
 	<th>Учитель</th>
 	<th>Предмет</th>
 	</tr>";
-    for ($i = 0 ; $i < $rows ; ++$i)
-    {
+    for ($i = 0 ; $i < $rows ; ++$i) {
         $row = mysqli_fetch_row($result);
         echo "<tr>";
             for ($j = 0 ; $j < 3 ; ++$j) echo "<td>$row[$j]</td>";
         echo "</tr>";
     }
      echo "</table>";
-    // очищаем результат
-	//var_dump ($result);
     mysqli_free_result($result);
 }
-
 mysqli_close($link);
 </code>
 </pre>

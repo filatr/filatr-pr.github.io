@@ -34,5 +34,8 @@
 <h2>GitHub и командная строка</h2>
 <p><a href="/study_working/working_github.php">Домашний практикум с текстовым редактором nano</a></p>
 <hr>
+<h2>ООП: практика</h2>
+<li><a href="/oop/working_php_oop.php">Практика</a></li>
+<hr>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 <?php //include '../template/inc/footer.php'; ?>

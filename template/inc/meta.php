@@ -89,6 +89,12 @@ elseif ($_SERVER['REQUEST_URI']=='/links/') {
 elseif ($_SERVER['REQUEST_URI']=='/oop/') {
 	$title = "Объектно-ориентированное программирование";
 }
+elseif ($_SERVER['REQUEST_URI']=='/oop/working_php_oop_1.php')  {
+	$title = "ООП: практика на занятии";
+}
+elseif ($_SERVER['REQUEST_URI']=='/oop/working_php_oop_2.php')  {
+    $title = "ООП: практика дома";
+}
 else
 $title = "Песочница";
 $description = "Песочница. Просто песочница. Проходи дальше";

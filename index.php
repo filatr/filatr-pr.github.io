@@ -1,4 +1,4 @@
-﻿<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
+﻿<?php include "template/inc/header.php"; ?>
 
 <h1>Ну что ж, начнем?</h1>
 <p>В каком-то далеком году, то ли 2016, то ли 2017, создал для себя небольшую песочницу, дабы понакидывать простинького HTML-кода, который время от времени использовал для работы с сайтами в одной web-студии. Шли "года" и тестовый сайтик пылился в индексе Гугла на задворках одного бесплатного хостинга, пока шара не была окончена и хостер не прикрыл лавочку в 2018г. "Мы" перебрались на локальный сервак моего ПК до лучших времен.</p>
@@ -12,6 +12,4 @@
 <li><a href="/study_working/">Практика</a></li>
 </ul>
 
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
-<?php // https://prnt.sc/nfulsz
-//include '../template/inc/footer.php'; ?>
+<?php include "template/inc/footer.php"; ?>
