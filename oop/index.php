@@ -6,6 +6,28 @@
     <li><a href="https://www.php.net/manual/ru/language.oop5.magic.php" target="_blank">Магические методы</a></li>
     <li><a href="https://www.internet-technologies.ru/articles/magicheskie-metody-php.html" target="_blank">Магические методы PHP</a></li>
     <li><a href="https://www.php.net/manual/ru/language.oop5.visibility.php" target="_blank">Область видимости</a></li>
+    <li><a href="https://habr.com/ru/post/37576/" target="_blank"> Полиморфизм для начинающих</a></li>
+    <li><a href="https://habr.com/ru/post/37610/" target="_blank">Что такое полиморфизм на самом деле. В PHP он тоже существует.</a></li>
+    <li>Интерфейс
+        <ul>
+            <li><a href="https://www.php.net/manual/ru/language.oop5.interfaces.php" target="_blank">Интерфейсы объектов</a></li>
+            <li><a href="https://habr.com/ru/post/328890/" target="_blank">Всё, что вы хотели узнать об интерфейсах</a></li>
+            <li><a href="https://www.internet-technologies.ru/articles/interfeys-php.html" target="_blank">Интерфейс PHP</a></li>
+            <li><a href="https://klisl.com/php_Interface.html" target="_blank">Для чего нужны интерфейсы в PHP</a></li>
+            <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
+        </ul>
+    </li>
+    <li>Абстрактный класс
+    <ul>
+        <li><a href="https://php.net/manual/ru/language.oop5.abstract.php" target="_blank">Абстрактные классы</a></li>
+        <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
+        <li><a href="https://www.internet-technologies.ru/articles/abstraktnyy-klass-php.html" target="_blank">Абстрактный класс PHP</a></li>
+        <li><a href="https://true-coder.ru/oop-v-php/oop-v-php-abstraktnye-klassy-i-interfejsy.html" target="_blank">ООП в PHP: Абстрактные классы и интерфейсы</a></li>
+    </ul>
+
+    </li>
+    <li><a href="https://ru.wikipedia.org/wiki/SOLID_(объектно-ориентированное_программирование)" target="_blank">SOLID</a></li>
+
 </ul>
 <h2>Основы ООП</h2>
 <p>В последнее время идея объектно-ориентированного программирования (ООП), кардинально новая идеология написания программ, все более занимает умы программистов.</p>
@@ -30,10 +52,55 @@
 </div></li>
   <li><div class="spoiler_v2">
 <a href="#" class="spoiler-trigger"><span>Полиморфизме;</span></a>
-<div class="spoiler-block">
+<div class="spoiler-block"><!-- уточнить -->
 <p>Полиморфизм позволяет использовать одни и те же имена для похожих, но технически разных задач. Главным в полиморфизме является то, что он позволяет манипулировать объектами путем создания стандартных интерфейсов для схожих действий. Полиморфизм значительно облегчает написание сложных программ.</p>
-</div>
-</div></li>
+    <a href="#" class="spoiler-trigger"><span>Пример кода</span></a>
+    <div class="spoiler-block">
+        <pre><code>
+abstract class Publication {
+ // определяем правило, что все публикации должны печататься, т.е. иметь метод do_print()
+ abstract public function do_print();
+}
+
+class News extends Publication {
+ // переопределяем абстрактный метод печати
+ public function do_print() {
+  echo "&lt;h4&gt;Новость&lt;/h4&gt;";
+  //...
+ }
+}
+class Announcement extends Publication {
+ // переопределяем абстрактный метод печати
+ public function do_print() {
+  echo "&lt;h4&gt;Объявление&lt;/h4&gt;";
+  //...
+ }
+}
+class Article extends Publication {
+ // переопределяем абстрактный метод печати
+ public function do_print() {
+  echo "&lt;h4&gt;Статья&lt;/h4&gt;";
+  //...
+ }
+}
+
+//Наполняем массив публикаций объектами, производными от Publication
+$publications[] = new News();
+$publications[] = new Announcement();
+$publications[] = new Article();
+
+foreach ($publications as $publication) {
+ if ($publication instanceof Publication) { // Если мы работаем с наследниками Publication
+  $publication->do_print(); // то мы можем смело выводить данные на печать
+ }
+ else {
+  //исключение или обработка ошибки
+ }
+}
+            </code></pre>
+    </div>
+</div></div>
+  </li>
   <li><div class="spoiler_v2">
 <a href="#" class="spoiler-trigger"><span>Наследование.</span></a>
 <div class="spoiler-block">
@@ -46,7 +113,9 @@
     <p>Класс - это базовое понятие в объектно-ориентированном программировании (ООП). Классы образуют синтаксическую базу ООП. Их можно рассматривать как своего рода "контейнеры" для логически связанных данных и функций (обычно называемых методами — см. ниже). Если сказать проще, то класс - это своеобразный тип данных.</p>
     <p>Экземпляр класса - это объект. Объект - это совокупность данных (свойств) и функций (методов) для их обработки. Свойства и методы называются членами класса. Вообще, объектом является все то, что поддерживает инкапсуляцию.</p>
     <p>Если класс можно рассматривать как тип данных, то объект — как переменную (по аналогии). Скрипт может одновременно работать с несколькими объектами одного класса, как с несколькими переменными.</p>
-    <p>Пример кода</p>
+    <div class="spoiler_v2">
+        <a href="#" class="spoiler-trigger"><span>Пример кода</span></a>
+        <div class="spoiler-block">
 <pre><code>
 // Создаем новый класс Coor:
 class Coor {
@@ -61,7 +130,7 @@ var $addr;
 // Создаем объект класса Coor:
 $object = new Coor;
     </code></pre>
-
+        </div></div>
     <hr>
     <h2>Магические методы</h2>
     <p>Магические методы PHP позволяют разработчикам совершать удивительные трюки в объектно-ориентированном PHP. Магические методы срабатывают в ответ на определенные действия или события.</p>
@@ -76,6 +145,54 @@ $object = new Coor;
     <li>Модификатор <span class="like_b">private (закрытый)</span> ограничивает область видимости так, что только класс, где объявлен сам элемент, имеет к нему доступ.</li>
 </ul>
     <hr>
+    <h2>Интерфейсы объектов</h2>
+    <p><a href="https://www.php.net/manual/ru/language.oop5.interfaces.php" target="_blank" class="like_b">Интерфейсы объектов</a> позволяют создавать код, который указывает, какие методы должен реализовать класс, без необходимости определять, как именно они должны быть реализованы.</p>
+    <p>Интерфейсы объявляются так же, как и обычные классы, но с использованием ключевого слова <span class="like_b">interface</span> вместо <span class="like_b">class</span>. Тела методов интерфейсов должны быть пустыми.</p>
+    <p>Все методы, определенные в интерфейсах должны быть общедоступными, что следует из самой природы интерфейса.</p>
+
+
+    <div class="spoiler_v2">
+        <a href="#" class="spoiler-trigger"><span>Пример кода</span></a>
+<div class="spoiler-block"><pre><code>
+interface iTemplate {
+    public function setVariable();
+    public function getHtml();
+}
+class Template implements iTemplate {
+    public function setVariable()
+        {
+    	echo 1;
+        }
+    public function getHtml()
+        {
+    	echo 2;
+        }
+}
+$a = new Template();
+$a->setVariable();
+$a->getHtml();
+</code></pre></div></div>
+
+
+    <ul>
+        <li><a href="https://www.php.net/manual/ru/language.oop5.interfaces.php" target="_blank">Интерфейсы объектов</a></li>
+        <li><a href="https://habr.com/ru/post/328890/" target="_blank">Всё, что вы хотели узнать об интерфейсах</a></li>
+        <li><a href="https://www.internet-technologies.ru/articles/interfeys-php.html" target="_blank">Интерфейс PHP</a></li>
+        <li><a href="https://klisl.com/php_Interface.html" target="_blank">Для чего нужны интерфейсы в PHP</a></li>
+        <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
+    </ul>
+<hr>
+<h2>Абстрактный класс</h2>
+
+
+
+
+
+<hr>
+<h2>SOLID</h2>
+
+
+    <hr>
 <h2>Практика</h2>
 <ul>
     <li><a href="/oop/working_php_oop_1.php">Практика на занятии</a></li>
@@ -87,4 +204,8 @@ $object = new Coor;
 
 
 
-<?php include "../template/inc/footer.php"; ?>
+<?php
+
+
+
+ include "../template/inc/footer.php"; ?>
