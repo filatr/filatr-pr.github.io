@@ -311,10 +311,26 @@ $a->getHtml();
 
     <hr>
     <p>Композиция и агрегация</p>
+<!--
+https://www.codewars.com/?language=php
+
+// патерны
+// https://refactoring.guru/ru/design-patterns/php
+-->
+    <hr>
+<h2>Паттерны</h2>
+
+mvc
+
+    https://habr.com/ru/post/150267/
+
+
+
+
 
 
     <hr>
-<h2>Практика</h2>
+    <h2>Практика</h2>
 <ul>
     <li><a href="/oop/working_php_oop_1.php">Практика на занятии</a></li>
     <li><a href="/oop/working_php_oop_2.php">Домашняя практика</a></li>
