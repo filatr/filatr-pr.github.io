@@ -17,6 +17,7 @@
             <li><a href="https://www.internet-technologies.ru/articles/urok-po-ciklam-v-php.html" target="_blank">Урок по циклам в PHP: цикл for с примерами</a></li>
         </ul>
     </li>
+    <li><a href="http://code.mu/books/php/" target="_blank">Учебник PHP для новичков</a></li>
 </ul>
 <hr>
 <h2>SQL</h2>
