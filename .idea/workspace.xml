@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18b70364-9c79-4051-819c-ffebfacb4a58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/links/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/links/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oop/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/oop/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ppp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/css/site.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,54 +16,50 @@
     <session id="-1715898056">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.63" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="1" />
           <entry key="php" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="PHP" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="588" />
+          <entry key="css" value="30" />
+          <entry key="php" value="685" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="CSS" value="30" />
           <entry key="HTML" value="13" />
-          <entry key="PHP" value="575" />
+          <entry key="PHP" value="672" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oop/ppp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="14" selection-start-line="1" selection-end-line="22" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oop/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="239" column="71" selection-start-line="239" selection-start-column="71" selection-end-line="239" selection-end-column="71" />
+            <state relative-caret-position="518">
+              <caret line="312" column="17" selection-start-line="312" selection-start-column="7" selection-end-line="312" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -78,6 +74,8 @@
       <find>328890</find>
       <find>articles/?cat=oop&amp;page=002</find>
       <find>lifeexample</find>
+      <find>language.oop5.abstract.php</find>
+      <find>tbl</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\sites\pr</dir>
@@ -92,6 +90,7 @@
         <option value="$PROJECT_DIR$/oop/ppp.php" />
         <option value="$PROJECT_DIR$/study_working/gener.php" />
         <option value="$PROJECT_DIR$/links/index.php" />
+        <option value="$PROJECT_DIR$/template/css/site.css" />
         <option value="$PROJECT_DIR$/oop/index.php" />
       </list>
     </option>
@@ -133,6 +132,17 @@
               <item name="pr" type="b2602c69:ProjectViewProjectNode" />
               <item name="pr" type="462c0819:PsiDirectoryNode" />
               <item name="oop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pr" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pr" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -177,17 +187,18 @@
       <workItem from="1557390320932" duration="4080000" />
       <workItem from="1557404881790" duration="2965000" />
       <workItem from="1557413271799" duration="1089000" />
+      <workItem from="1557483044331" duration="2343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18585000" />
+    <option name="totallyTimeSpent" value="20928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2739872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,15 +236,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/ppp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="14" selection-start-line="1" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="-9">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="567" column="1" lean-forward="true" selection-start-line="567" selection-end-line="567" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="239" column="71" selection-start-line="239" selection-start-column="71" selection-end-line="239" selection-end-column="71" />
+        <state relative-caret-position="518">
+          <caret line="312" column="17" selection-start-line="312" selection-start-column="7" selection-end-line="312" selection-end-column="17" />
         </state>
       </provider>
     </entry>
