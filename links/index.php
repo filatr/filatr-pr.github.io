@@ -28,8 +28,14 @@
 <li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник Javascript</a></li>
 </ul>
 <hr>
-
-
+<h2>PHP-фреймворк</h2>
+<h3>Laravel</h3>
+<ul>
+<li><a href="https://laravel.com/" target="_blank">Laravel - The PHP Framework For Web Artisans</a></li>
+<li><a href="https://laravel.ru/" target="_blank">Статьи | Laravel по-русски</a></li>
+<li><a href="http://laravel.su/" target="_blank">Laravel - русскоязычное комьюнити</a></li>
+</ul>
+<hr>
 <h2>Git</h2>
 <ul>
     <li>Этот сайт на <a href="https://github.com/filatr/pr" target="_blank">GitHub.com</a></li>
@@ -41,6 +47,7 @@
 <h2>Разное</h2>
 <ul>
     <li><a href="http://www.avalanche.kiev.ua/site/free/convert-table-html.html" target="_blank">Excel в HTML</a></li>
+    <li><a href="https://www.codewars.com/" target="_blank">Codewars: Train your coding skills</a> (задачник, в т.ч. и по PHP)</li>
     <li><a href="https://sandev.pro/web/101-prostoy-htmljs-spoyler.html" target="_blank">Простой HTML+JS спойлер</a></li>
     <li><a href="https://www.10bestdesign.com/dirtymarkup/" target="_blank">DirtyMarkup Formatter - HTML, CSS, &amp; JavaScript Beautifier</a></li>
 </ul>
