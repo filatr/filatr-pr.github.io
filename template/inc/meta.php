@@ -95,6 +95,9 @@ elseif ($_SERVER['REQUEST_URI']=='/oop/working_php_oop_1.php')  {
 elseif ($_SERVER['REQUEST_URI']=='/oop/working_php_oop_2.php')  {
     $title = "ООП: практика дома";
 }
+elseif ($_SERVER['REQUEST_URI']=='/framework/') {
+    $title = "Фреймворк Laravel";
+}
 else
 $title = "Песочница";
 $description = "Песочница. Просто песочница. Проходи дальше";

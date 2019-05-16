@@ -26,6 +26,7 @@ include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/meta.php");
 		<li><a href="/study_theory/">Теория</a></li>
 		<li><a href="/study_working/">Практика</a></li>
 		<li><a href="/oop/">ООП</a></li>
+		<li><a href="/framework/">Laravel</a></li>
 		<li><a href="/links/">Полезные ссылки</a></li>
 	</ul>
 <div class="clear"></div>
