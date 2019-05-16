@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18b70364-9c79-4051-819c-ffebfacb4a58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/oop/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="18b70364-9c79-4051-819c-ffebfacb4a58" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +12,7 @@
     <session id="-1715898056">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.46" value="1" />
@@ -59,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oop/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="315" lean-forward="true" selection-start-line="315" selection-end-line="315" />
+            <state relative-caret-position="441">
+              <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
             </state>
           </provider>
         </entry>
@@ -189,16 +185,15 @@
       <workItem from="1557404881790" duration="2965000" />
       <workItem from="1557413271799" duration="1089000" />
       <workItem from="1557483044331" duration="2343000" />
-      <workItem from="1557506703392" duration="1759000" />
+      <workItem from="1557506703392" duration="2356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22687000" />
+    <option name="totallyTimeSpent" value="23284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27836612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -253,8 +248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="315" lean-forward="true" selection-start-line="315" selection-end-line="315" />
+        <state relative-caret-position="441">
+          <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
         </state>
       </provider>
     </entry>
