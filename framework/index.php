@@ -31,7 +31,7 @@ composer create-project --prefer-dist laravel/laravel blog "5.4.*"
 <h2>Миграция</h2>
 <p>Создание файла миграции</p>
 <pre><code>
-php artisan make:model Models/BlogCategory -m
+php artisan make:migration test
 </code></pre>
 
 <p>А потом сама миграция</p>

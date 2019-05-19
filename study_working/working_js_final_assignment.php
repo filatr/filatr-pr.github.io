@@ -3,7 +3,7 @@
 
 <h2>Пишим програмку на JS</h2>
 <div class="dz">
-<p><a href="/img/product.jpg" data-lightbox="image-1">Вот задание</a></p>
+<p><a href="/images/product.jpg" data-lightbox="image-1">Вот задание</a></p>
 <ol>
 <li>Создать объект <span class="like_b">Product</span> и назначить ему свойства <span class="like_i">name</span>, <span class="like_i">price</span>, <span class="like_i">quantity</span>, <span class="like_i">manufacturer</span> и <span class="like_i">rating</span>. При этом <span class="like_b">rating</span> является специальным свойством которое содержит массив оценок товара пользователями под нулевым ключом количество оценок с рейтингом 1, под единичным с рейтингом 2 и т.д.<br>
 Пример массива: <span class="color_1">Product.</span><span class="color_2">rating</span> = [1, 4, 30, 15, 5]</li>
