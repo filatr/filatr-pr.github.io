@@ -11,6 +11,7 @@
     <li><a href="https://www.php.net/manual/ru/language.oop5.visibility.php" target="_blank">Область видимости</a></li>
     <li><a href="https://habr.com/ru/post/37576/" target="_blank"> Полиморфизм для начинающих</a></li>
     <li><a href="https://habr.com/ru/post/37610/" target="_blank">Что такое полиморфизм на самом деле. В PHP он тоже существует.</a></li>
+    <li><a href="https://habr.com/ru/post/37576/" target="_blank"> Полиморфизм для начинающих </a></li>
     <li>Интерфейс
         <ul>
             <li><a href="https://www.php.net/manual/ru/language.oop5.interfaces.php" target="_blank">Интерфейсы объектов</a></li>
@@ -57,7 +58,7 @@
         <li><div class="spoiler_v2">
                 <a href="#" class="spoiler-trigger"><span>Полиморфизме;</span></a>
                 <div class="spoiler-block">
-                    <p>Полиморфизм проявляется, когда версия переопределённого метода в цепочке наследования определяется прямо при его вызове исходя из типа объекта, от которого этот метод вызывается.</p>
+                    <p>Полиморфизм — это способность обьекта использовать методы производного класса, который не существует на момент создания базового. Для тех, кто не особо сведущ в ООП, это, наверно, звучит сложно. Поэтому рассмотрим применение полиморфизма на примере.</p>
                 </div></div>
         </li>
         <li><div class="spoiler_v2">
