@@ -32,8 +32,10 @@
 <h3>Laravel</h3>
 <ul>
 <li><a href="https://laravel.com/" target="_blank">Laravel - The PHP Framework For Web Artisans</a></li>
-<li><a href="https://laravel.ru/" target="_blank">Статьи | Laravel по-русски</a></li>
-<li><a href="http://laravel.su/" target="_blank">Laravel - русскоязычное комьюнити</a></li>
+<li><a href="htps://laravel.ru/" target="_blank">Статьи | Laravel по-русски</a></li>
+<li><a href="http://laravel.su/" target="_blank">Laravel - русскоязычное комьюнити</a>
+    <ul><li><a href="http://laravel.su/docs/5.4/installation" target="_blank">Документация Laravel 5.x</a></li></ul>
+</li>
 </ul>
 <hr>
 <h2>Git</h2>
