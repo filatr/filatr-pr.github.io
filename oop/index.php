@@ -20,7 +20,7 @@
             <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
         </ul>
     </li>
-    <li>Абстрактный класс 
+    <li>Абстрактный класс
     <ul>
         <li><a href="https://php.net/manual/ru/language.oop5.abstract.php" target="_blank">Абстрактные классы</a></li>
         <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
