@@ -4,6 +4,7 @@
 <ul>
     <li><a href="https://php-academy.kiev.ua/uk/blog/learning-oop-in-php-asap" target="_blank">Вивчення OOP в PHP якнайшвидше! </a></li>
     <li><a href="http://www.php.su/learnphp/phpoo/" target="_blank">PHP и ООП</a></li>
+    <li><a href="https://razrab.info/principy-oop-php/" target="_blank">Принципы ООП PHP (основные понятия и парадигмы)</a></li>
     <li><a href="https://ru.wikipedia.org/wiki/Объектно-ориентированное_программирование" target="_blank">ООП</a></li>
     <li><a href="https://www.php.net/manual/ru/language.oop5.magic.php" target="_blank">Магические методы</a></li>
     <li><a href="https://www.internet-technologies.ru/articles/magicheskie-metody-php.html" target="_blank">Магические методы PHP</a></li>
