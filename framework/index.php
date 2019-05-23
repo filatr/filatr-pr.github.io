@@ -40,4 +40,18 @@ php artisan make:migration test
 php artisan migrate
 </code></pre>
 <hr>
+<h2>Ошибки</h2>
+
+<p class="like_b">Laravel 5 Class 'Collective\Html\HtmlServiceProvider' не найден на AWS</p>
+<p>Если вы используете Laravel 5.2, попробуйте добавить его к вашему composer.json</p>
+<p>use</p>
+<pre><code>
+"require": {
+    "php": ">=5.5.9",
+    "laravel/framework": "5.2.*",
+    "laravelcollective/html": "^5.2",
+    ...
+},
+</code></pre>
+<hr>
 <?php include "../template/inc/footer.php"; ?>
