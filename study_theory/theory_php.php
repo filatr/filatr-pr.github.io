@@ -28,39 +28,97 @@
 
 
     <h2>Типы данных</h2>
-<div class="php_type">
-<p>PHP поддерживает восемь простых типов данных (переменных):</p>
-<p>Четыре скалярных типа:</p>
-<ol>
-<li>boolean (двоичные данные)</li>
-<li>integer (целые числа)</li>
-<li>float (числа с плавающей точкой или 'double')</li>
-<li>string (строки)</li>
-</ol>
-<p>Два смешанных типа:</p>
-<ol start="5">
-<li>array (массивы)</li>
-<li>object (объекты)</li>
-</ol>
-<p>И два специальных типа:</p>
-<ol start="7">
-<li>resource (ресурсы)</li>
-<li>NULL ("пустой" тип)</li>
-</ol>
-<p>Существуют также несколько псевдотипов:</p>
-<ul>
-<li>mixed (смешанный)</li>
-<li>number (числовой)</li>
-<li>callback (обратного вызова)</li>
-</ul>
-<p class="like_i"><a href="http://www.php.su/learnphp/vars/?types" target="_blank">Источник 1</a></p>
-</div>
+    <div class="php_type">
+        <p>PHP поддерживает восемь простых типов данных (переменных):</p>
+        <p>Четыре скалярных типа:</p>
+        <ol>
+            <li>
+                <div class="spoiler_v2">
+                    <a class="spoiler-trigger" href="#"><span>boolean (двоичные данные)</span></a>
+                    <div class="spoiler-block">
+                        <p>Выражает истинность значения - это может быть либо <span class="like_b">TRUE</span>, либо <span class="like_b">FALSE</span></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="spoiler_v2">
+                    <a class="spoiler-trigger" href="#"><span>integer (целые числа)</span></a>
+                    <div class="spoiler-block"><p>Целое это число из множества Z = {..., -2, -1, 0, 1, 2, ...}, обычно длиной 32 бита (от –2 147 483 648 до 2 147 483 647).</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="spoiler_v2">
+                    <a class="spoiler-trigger" href="#"><span>float (числа с плавающей точкой или 'double')</span></a>
+                    <div class="spoiler-block">
+                        <p>Вещественное число довольно большой точности</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="spoiler_v2">
+                    <a class="spoiler-trigger" href="#"><span>string (строки)</span></a>
+                    <div class="spoiler-block">
+                        <p>Набор символов любой длины. Длина строки ограничена только размером свободой оперативной памяти.</p>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <p>Два смешанных типа:</p>
+        <ol start="5">
+            <li>
+                <div class="spoiler_v2">
+                    <a class="spoiler-trigger" href="#"><span>array (массивы)</span></a>
+                    <div class="spoiler-block">
+                        <p>Это упорядоченный набор данных, в котором устанавлено соответствие между значением и ключом.</p>
+                        <p>Индекс (ключ) служит для однозначной идентификации элемента внутри массива. В одном массиве не может быть двух элементов с одинаковыми индексами.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="spoiler_v2">
+                    <a class="spoiler-trigger" href="#"><span>object (объекты)</span></a>
+                    <div class="spoiler-block"><p></p></div>
+                </div>
+            </li>
+        </ol>
+        <p>И два специальных типа:</p>
+        <ol start="7">
+            <li>
+                <div class="spoiler_v2">
+                    <a class="spoiler-trigger" href="#"><span>resource (ресурсы)</span></a>
+                    <div class="spoiler-block">
+                        Специальная переменная, содержащая ссылку на внешний ресурс.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="spoiler_v2">
+                    <a class="spoiler-trigger" href="#"><span>NULL ("пустой" тип)</span></a>
+                    <div class="spoiler-block">
+                        <p>Специальное значение <span class="like_b">NULL</span> говорит о том, что эта переменная не имеет значения. <span class="like_b">NULL</span> - это единственно возможное значение типа <span class="like_b">NULL</span> (пустой тип).</p>
+                        <p>Переменная считается <span class="like_b">NULL</span> если:</p>
+                        <ul>
+                            <li>ей была присвоена константа <span class="like_b">NULL</span>;</li>
+                            <li>ей еще не было присвоено какое-либо значение;</li>
+                            <li>она была удалена с помощью unset().</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <p>Существуют также несколько псевдотипов:</p>
+        <ul>
+            <li>mixed (смешанный)</li>
+            <li>number (числовой)</li>
+            <li>callback (обратного вызова)</li>
+        </ul>
+        <p class="like_i"><a href="http://www.php.su/learnphp/vars/?types" target="_blank">Источник 1</a></p>
+    </div>
 
 <hr>
 
 <p>Разобрать/добавить/выяснить</p>
 
-функция и метод - чем отличаются<br>
 https://puzzleweb.ru/php/23_function.php<br>
 https://puzzleweb.ru/php/23_function2.php#a2<br>
 http://php720.com/lesson/42<br>
@@ -71,6 +129,16 @@ http://php720.com/lesson/42<br>
 continue<br>
 формы<br>
 асоциативный массив<br>
+
+<hr>
+
+    <p>Функция - это фрагмент кода, который вызывается по имени. Это может быть передано данных для работы (то есть параметров) и может при необходимости возвращать данные (возвращаемое значение). Все данные, переданные функции, явно передаются.</p>
+
+    <p>A метод - это фрагмент кода, вызываемый именем, связанным с объектом. В большинстве случаев он идентичен функции, за исключением двух ключевых отличий:</p>
+<ul>
+    <li>Метод неявно передает объект, на который он был вызван.</li>
+    <li>Метод способен работать с данными, содержащимися в классе (помня, что объект является экземпляром класса - класс является определением, объект является экземпляром этих данных).</li>
+</ul>
 
 <hr>
 <h2>Массивы (Array)</h2>
@@ -178,6 +246,8 @@ continue<br>
 <li><a href="https://php.net/manual/ru/book.filesystem.php" target="_blank">Файловая система</a></li>
 <li><a href="http://www.php.su/articles/?cat=fs&page=005" target="_blank">PHP. Работа с файлами</a></li>
 </ul>
+<hr>
+
 <hr>
 
 <h2>Практика</h2>
