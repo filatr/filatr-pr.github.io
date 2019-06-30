@@ -577,3 +577,15 @@ pre code {
   border: 1px solid #000;
   padding: 10px;
 }
+
+.red {
+    background-color: red;
+    color: #fff;
+}
+.yellow {
+    background-color: yellow;
+}
+table.errorfunc tbody td.other {
+    background-color: blue;
+    color: #fff;
+}
