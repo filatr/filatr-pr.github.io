@@ -579,7 +579,7 @@ pre code {
 }
 
 .red {
-    background-color: red;
+    background-color: #f00;
     color: #fff;
 }
 .yellow {
@@ -588,4 +588,16 @@ pre code {
 table.errorfunc tbody td.other {
     background-color: blue;
     color: #fff;
+}
+div.blc_function {
+    display: -webkit-flex;
+    display: flex;
+}
+div.blc_function > div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    vertical-align: top;
+    width: 25%;
 }

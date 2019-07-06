@@ -28,6 +28,11 @@
 
 
     <h2>Типы данных</h2>
+
+    <p>Тип данных – это описание, определяющее свойства и порядок обработки данных. Например, фраза “переменная $str имеет тип данных “строка” означает, что в этой переменной может содержаться любое число символов, а операция сложения строк представляет собой последовательное соединение слагаемых строк в одну.</p>
+    <p>PHP является языком программирования с динамической типизацией, не требующим указания типа при объявлении переменных, равно как и самого объявления переменных. Преобразования между скалярными типами зачастую осуществляются неявно без дополнительных усилий. Впрочем, PHP предоставляет широкие возможности и для явного преобразования типов.</p>
+
+
     <div class="php_type">
         <p>PHP поддерживает восемь простых типов данных (переменных):</p>
         <p>Четыре скалярных типа:</p>
@@ -112,10 +117,32 @@
             <li>number (числовой)</li>
             <li>callback (обратного вызова)</li>
         </ul>
-        <p class="like_i"><a href="http://www.php.su/learnphp/vars/?types" target="_blank">Источник 1</a></p>
     </div>
-
-<hr>
+    <h3>Конкатенация</h3>
+    <p>Конкатенация — это объединение двух или более строк в одну большую. Объединение происходит с помощью оператора конкатенации — . (точка). При конкатенации каждая последующая строка добавляется в конец предыдущей. Значение любого типа, которое объединяется со строкой, будет неявно преобразовано в строку и далее будет произведена конкатенация.</p>
+    <h3>Область видимости переменной</h3>
+    <p><span class="like_b">Область видимости переменных</span> - это контекст, в рамках которого переменная была определена и где к ней можно получить доступ. В PHP имеется две области видимости переменных:</p>
+<ul>
+    <li><span class="like_b">Глобальная</span> - к переменным можно получить доступ в любом месте скрипта;</li>
+    <li><span class="like_b">Локальная</span> - к переменным можно получить доступ только внутри функции, в которой они были определены;</li>
+</ul>
+    <p>Область видимости переменной, а особенно, локальная, существенно облегчает управление кодом. Если бы все переменные были глобальными, то их можно было бы менять в любом месте скрипта. Это привело бы к хаосу и больших скриптах, так как очень часто разные части скрипта используют переменные с одинаковыми именами. Ограничивая область видимости локальным контекстом вы определяете границы кода, который может получить доступ к переменной, что делает код  более устойчивым, модульным и простым в отладке.</p>
+    <p>Переменные с глобальной областью видимости называются глобальными, а с локальной областью видимости - локальными.</p>
+<!-- https://ruseller.com/lessons.php?rub=37&id=751 -->
+    <h3>Рекурсия</h3>
+    <p><span class="like_b">Рекурсия</span> – это вызов функции из неё же самой, непосредственно (простая рекурсия) или через другие функции (сложная или косвенная рекурсия), например, функция A вызывает функцию B, а функция B – функцию A. Количество вложенных вызовов функции или процедуры называется глубиной рекурсии.</p>
+    <h3>Разница между одинарными и двойными кавычками</h3>
+    <p>В двойных кавычках данные “парсятся”, а в одинарных – нет.</p>
+    <p>Разница между ' и " заключается в том, что вы можете вставлять переменные внутри строки с двойными кавычками.</p>
+    <p>Например:</>
+    <pre><code>$name = 'John';
+$sentence = "$name just left"; // John just left
+</code></pre>
+    <p>Если вы будете использовать одинарные кавычки, то вам придется объединить:</p>
+    <pre><code>$name = 'John';
+$sentence = $name.' just left'; // John just left
+</code></pre>
+    <hr>
     <h2>Функции</h2>
     <p><span class="like_b">Функция</span> - это фрагмент кода, который вызывается по имени. Это может быть передано данных для работы (то есть параметров) и может при необходимости возвращать данные (возвращаемое значение). Все данные, переданные функции, явно передаются.</p>
 
@@ -126,20 +153,103 @@
 </ul>
 
 <p>Памятка по некоторым функциям</p>
-<ul>
-<li><a href="https://www.php.net/manual/ru/function.empty.php" target="_blank">empty</a> — Проверяет, пуста ли переменная</li>
-<li><a href="https://www.php.net/manual/ru/function.isset.php" target="_blank">isset</a> — Определяет, была ли установлена переменная значением, отличным от <span class="like_b">NULL</span></li>
-<li><a href="https://www.php.net/manual/ru/function.unset.php" target="_blank">unset</a> — Удаляет переменную</li>
-<li><a href="https://www.php.net/manual/ru/function.strripos.php" target="_blank">strripos</a> — Возвращает позицию последнего вхождения подстроки без учета регистра</li>
-<li><a href="https://www.php.net/manual/ru/function.strripos.php" target="_blank">strpos</a> — Возвращает позицию первого вхождения подстроки</li>
-<li><a href="https://www.php.net/manual/ru/function.var-dump.php" target="_blank">var_dump</a> — Выводит информацию о переменной</li>
-<li><a href="https://www.php.net/manual/ru/function.include.php" target="_blank">include</a> -  выражение включает и выполняет указанный файл
-	<ul><li>При ошибке include выдаст предупреждение E_WARNING и продолжить выполнение скрипта;</li></ul>
-</li>
-<li><a href="https://www.php.net/manual/ru/function.require.php" target="_blank">require</a> -  выражение включает и выполняет указанный файл
-	<ul><li>При ошибке require выдаст также и фатальную ошибку уровня E_COMPILE_ERROR и остановит выполнение скрипта.</li></ul>
-</li>
-</ul>
+    <div class="blc_function">
+        <div>
+            <p>Строки</p>
+            <ul>
+                <li><a href="https://www.php.net/manual/ru/function.echo.php" target="_blank">echo</a> – выводит одну или более строк.</li>
+                <li><a href="https://www.php.net/manual/ru/function.explode.php" target="_blank">explode</a> – разбивает строку на подстроки.</li>
+                <li><a href="https://www.php.net/manual/ru/function.htmlentities.php" target="_blank">htmlentities</a> – преобразует символы в соответствующие HTML сущности.</li>
+                <li><a href="https://www.php.net/manual/ru/function.htmlspecialchars.php" target="_blank">htmlspecialchars</a> – преобразует специальные символы в HTML сущности.</li>
+                <li><a href="https://www.php.net/manual/ru/function.implode.php" target="_blank">implode</a> – объединяет элементы массива в строку.</li>
+                <li><a href="https://www.php.net/manual/ru/function.ltrim.php" target="_blank">ltrim</a> – удаляет пробелы из начала строки.</li>
+                <li><a href="https://www.php.net/manual/ru/function.rtrim.php" target="_blank">rtrim</a> – удаляет пробелы из конца строки.</li>
+                <li><a href="https://www.php.net/manual/ru/function.trim.php" target="_blank">trim</a> – удаляет пробелы из начала и конца строки.</li>
+                <li><a href="https://www.php.net/manual/ru/function.md5.php" target="_blank">md5</a> – возвращает MD5 хэш строки.</li>
+                <li><a href="https://www.php.net/manual/ru/function.str-repeat.php" target="_blank">str_repeat</a> – возвращает повторяющуюся строку.</li>
+                <li><a href="https://www.php.net/manual/ru/function.str-replace.php" target="_blank">str_replace</a> – заменяет строку поиска на строку замены.</li>
+                <li><a href="https://www.php.net/manual/ru/function.str-split.php" target="_blank">str_split</a> – преобразует строку в массив.</li>
+                <li><a href="https://www.php.net/manual/ru/function.strlen.php" target="_blank">strlen</a> – возвращает длину строки.</li>
+                <li><a href="https://www.php.net/manual/ru/function.strrev.php" target="_blank">strrev</a> – переворачивает строку задом наперед.</li>
+                <li><a href="https://www.php.net/manual/ru/function.strripos.php" target="_blank">strripos</a> — Возвращает позицию последнего вхождения подстроки без учета регистра</li>
+                <li><a href="https://www.php.net/manual/ru/function.strpos.php" target="_blank">strpos</a> — Возвращает позицию первого вхождения подстроки</li>
+            </ul>
+        </div>
+        <div>
+            <p>Массивы</p>
+            <ul>
+                <li>Сортировка
+                    <ul>
+                        <li><a href="https://www.php.net/manual/ru/function.rsort.php" target="_blank">rsort</a> – Сортирует массив в обратном порядке</li>
+                        <li><a href="https://www.php.net/manual/ru/function.arsort.php" target="_blank">arsort</a> – Сортирует массив в обратном порядке, сохраняя ключи</li>
+                        <li><a href="https://www.php.net/manual/ru/function.asort.php" target="_blank">asort</a> – Сортирует массив, сохраняя ключи</li>
+                        <li><a href="https://www.php.net/manual/ru/function.sort.php" target="_blank">sort</a> – Сортирует массив</li>
+                        <li><a href="https://www.php.net/manual/ru/function.ksort.php" target="_blank">ksort</a> – отсортировать массив по ключам</li>
+                        <li><a href="https://www.php.net/manual/ru/function.krsort.php" target="_blank">krsort</a> – отсортировать массив по ключам в обратном порядке</li>
+                    </ul>
+                </li>
+                <li><a href="https://www.php.net/manual/ru/function.array-flip.php" target="_blank">array_flip</a> – меняет местами ключи с их значениями в массиве</li>
+                <li><a href="https://www.php.net/manual/ru/function.shuffle.php" target="_blank">shuffle</a> – перемешать массив</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-unique.php" target="_blank">array_unique</a> – убрать повторяющиеся значения из массива</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-unshift.php" target="_blank">array_unshift</a> – добавить один или несколько элементов в начало массива</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-sum.php" target="_blank">array_sum</a> – вычислить сумму значений массива</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-shift.php" target="_blank">array_shift</a> – извлечь первый элемент массива</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-reverse.php" target="_blank">array_reverse</a> – возвращает массив с элементами в обратном порядке</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-pop.php" target="_blank">array_pop</a> – извлечь последний элемент массива</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-push.php" target="_blank">array_push</a> – добавить один или несколько элеметов в конец массива</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-keys.php" target="_blank">array_keys</a> – выбрать все ключи массива</li>
+                <li><a href="https://www.php.net/manual/ru/function.array-count-values.php" target="_blank">array_count_values</a> – подсчитать количество всех значений массива</li>
+                <li><a href="https://www.php.net/manual/ru/function.count.php" target="_blank">count</a> – Подсчитывает количество элементов массива или чего-либо в объекте</li>
+                <li><a href="https://www.php.net/manual/ru/function.sizeof.php" target="_blank">sizeof</a> – Псевдоним count()</li>
+            </ul>
+        </div>
+        <div>
+            <p>Файлы</p>
+            <ul>
+                <li><a href="https://www.php.net/manual/ru/function.filesize.php" target="_blank">filesize</a> – получить размер файла</li>
+                <li><a href="https://www.php.net/manual/ru/function.filetype.php" target="_blank">filetype</a> – получить тип файла</li>
+                <li><a href="https://www.php.net/manual/ru/function.fopen.php" target="_blank">fopen</a> – открывает файл или URL</li>
+                <li><a href="https://www.php.net/manual/ru/function.fwrite.php" target="_blank">fwrite</a> – бинарно-безопасная запись в файл</li>
+                <li><a href="https://www.php.net/manual/ru/function.is-executable.php" target="_blank">is_executable</a> – определяет, является ли файл исполняемым</li>
+                <li><a href="https://www.php.net/manual/ru/function.is-file.php" target="_blank">is_file</a> – определяет, является ли файл обычным файлом</li>
+                <li><a href="https://www.php.net/manual/ru/function.is-readable.php" target="_blank">is_readable</a> – определяет, доступен ли файл для чтения</li>
+                <li><a href="https://www.php.net/manual/ru/function.is-uploaded-file.php" target="_blank">is_uploaded_file</a> – определяет, был ли файл загружен при помощи HTTP POST</li>
+                <li><a href="https://www.php.net/manual/ru/function.is-writable.php" target="_blank">is_writable</a> – определяет, доступен ли файл для записи</li>
+                <li><a href="https://www.php.net/manual/ru/function.mkdir.php" target="_blank">mkdir</a> – создаёт директорию</li>
+                <li><a href="https://www.php.net/manual/ru/function.move-uploaded-file.php" target="_blank">move_uploaded_file</a> – перемещает загруженный файл в новое место</li>
+                <li><a href="https://www.php.net/manual/ru/function.pathinfo.php" target="_blank">pathinfo</a> – возвращает информацию о пути к файлу</li>
+                <li><a href="https://www.php.net/manual/ru/function.readfile.php" target="_blank">readfile</a> – выводит файл</li>
+                <li><a href="https://www.php.net/manual/ru/function.rename.php" target="_blank">rename</a> – переименовывает файл или директорию</li>
+                <li><a href="https://www.php.net/manual/ru/function.unlink.php" target="_blank">unlink</a> – удаляет файл</li>
+            </ul>
+        </div>
+        <div>
+            <p>Другое</p>
+            <ul>
+                <li><a href="https://www.php.net/manual/ru/function.empty.php" target="_blank">empty</a> — Проверяет, пуста ли переменная</li>
+                <li><a href="https://www.php.net/manual/ru/function.isset.php" target="_blank">isset</a> — Определяет, была ли установлена переменная значением, отличным от NULL</li>
+                <li><a href="https://www.php.net/manual/ru/function.unset.php" target="_blank">unset</a> — Удаляет переменную</li>
+                <li><a href="https://www.php.net/manual/ru/function.var-dump.php" target="_blank">var_dump</a> — Выводит информацию о переменной</li>
+                <li><a href="https://www.php.net/manual/ru/function.include.php" target="_blank">include</a> -  выражение включает и выполняет указанный файл
+                    <ul><li>При ошибке include выдаст предупреждение E_WARNING и продолжить выполнение скрипта;</li></ul>
+                </li>
+                <li><a href="https://www.php.net/manual/ru/function.require.php" target="_blank">require</a> -  выражение включает и выполняет указанный файл
+                    <ul><li>При ошибке require выдаст также и фатальную ошибку уровня E_COMPILE_ERROR и остановит выполнение скрипта.</li></ul>
+                </li>
+                <li><a href="https://www.php.net/manual/ru/function.eval.php" target="_blank">eval</a> - Выполняет код PHP, содержащейся в строке</li>Функции
+            </ul>
+        </div>
+    </div>
+    <p>Функция <span class="like_b">count()</span> выполняет ту же операцию, что и <span class="like_b">sizeof()</span> – возвращает количество значений, содержащихся в массиве. Единственное различие между ними заключается в том, что в некоторых ситуациях count() возвращает дополнительную информацию:</p>
+    <ul>
+        <li>Если переменная существует и является массивом, count() возвращает количество элементов в массиве;</li>
+        <li>Если переменная существует, но не является массивом, функция возвращает значение 1;</li>
+        <li>Если переменная не существует, возвращается значение 0.</li>
+    </ul>
+    <h3>Передача параметра по значению и передача по ссылке.</h3>
+    <p>Параметры в процедуры и функции можно передавать 2 способами – по значению и по ссылке. Отличия между этими двумя способами следующие: при передаче параметра по значению в процедуру (функцию) передается копия переменной, а при передаче по ссылке – оригинал (сама переменная).</p>
+    <p>Наглядный пример</p>
+    <img src="/images/parameter-pass.gif" alt="Передача параметра по значению и передача по ссылке">
     <hr>
     <h2>Ошибки в php</h2>
     <table class="tbl_2 errorfunc">
