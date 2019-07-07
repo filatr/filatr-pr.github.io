@@ -544,21 +544,26 @@ pre code {
 .hljs-keyword {
     color: #a626a4;
 }
-
+.our_school {
+    display: flex;
+}
 .our_school table {
-  display: inline-block;
-  /*border: 1px solid #000;*/
   vertical-align: top;
-  margin: 0 10px;
+  margin: 10px auto;
   border-collapse: collapse;
   padding: 10px;
-  width: 30%;
+  width: 33%;
 }
 .our_school table td, .our_school table th {
   border: 1px solid #000;
   text-align: center;
   padding: 10px;
   width: 30%;
+}
+.our_school textarea {
+    display: block;
+    margin: 10px auto 20px;
+    height: 40px;
 }
 .tbl_1{
   border-collapse: collapse;
