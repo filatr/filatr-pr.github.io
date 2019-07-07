@@ -1,38 +1,13 @@
 ﻿<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
 <h1>Немного PHP: теория</h1>
-<ul>
-<li><a href="https://www.php.net/manual/ru/" target="_blank">Мануалы по PHP</a> на php.net</li>
-<li><a href="http://www.php.su/" target="_blank">Мануалы по PHP</a> на php.su</li>
-<li>Масивы
-	<ul>
-		<li>Масивы на <a href="https://www.php.net/manual/ru/book.array.php" target="_blank">php.net</a></li>
-		<li>Масивы на <a href="http://www.php.su/learnphp/datatypes/?array" target="_blank">php.su</a></li>
-	</ul>
-</li>
-<li><a href="http://www.php.su/learnphp/cs/?cycles" target="_blank">Немного о функциях</a></li>
-<li><a href="https://developer.mozilla.org/ru/docs/Web/HTTP/Session" target="_blank">HTTP сессия</a></li>
-<li><a href="https://www.php.net/manual/ru/session.examples.basic.php" target="_blank">Основы использования</a></li>
-<li><a href="http://www.php.su/articles/?cat=examples&page=070" target="_blank">Сессии в PHP</a></li>
-<li><a href="http://www.softtime.ru/bookphp/gl8_1.php" target="_blank">Сессии и cookie в PHP</a></li>
-<li><a href="https://www.php.net/manual/ru/features.cookies.php" target="_blank">Cookies</a></li>
-<li><a href="http://www.php.su/lessons/?lesson_17" target="_blank">Приложение № 3 - О регулярных выражениях.</a></li>
-<li><a href="http://archive-ipq-co.narod.ru/l1/regexp.html" target="_blank">Регулярные выражения</a></li>
-<li><a href="https://metanit.com/web/php/5.1.php" target="_blank">Работа с файловой системой</a></li>
-<li><a href="https://php.net/manual/ru/book.filesystem.php" target="_blank">Файловая система</a></li>
-<li><a href="http://www.php.su/articles/?cat=fs&page=005" target="_blank">PHP. Работа с файлами</a></li>
-</ul>
+
 <p class="like_i"><a href="/phpinfo.php" target="_blank">phpinfo</a></p>
 <hr>
 <h2>Что такое PHP?</h2>
     <p>PHP (Hypertext Preprocessor) - это язык программирования общего назначения с открытым исходным кодом. PHP специально сконструирован для веб-разработок.</p>
-
-
     <h2>Типы данных</h2>
-
     <p>Тип данных – это описание, определяющее свойства и порядок обработки данных. Например, фраза “переменная $str имеет тип данных “строка” означает, что в этой переменной может содержаться любое число символов, а операция сложения строк представляет собой последовательное соединение слагаемых строк в одну.</p>
     <p>PHP является языком программирования с динамической типизацией, не требующим указания типа при объявлении переменных, равно как и самого объявления переменных. Преобразования между скалярными типами зачастую осуществляются неявно без дополнительных усилий. Впрочем, PHP предоставляет широкие возможности и для явного преобразования типов.</p>
-
-
     <div class="php_type">
         <p>PHP поддерживает восемь простых типов данных (переменных):</p>
         <p>Четыре скалярных типа:</p>
@@ -142,7 +117,6 @@ $sentence = "$name just left"; // John just left
     <pre><code>$name = 'John';
 $sentence = $name.' just left'; // John just left
 </code></pre>
-    <hr>
     <h2>Функции</h2>
     <p><span class="like_b">Функция</span> - это фрагмент кода, который вызывается по имени. Это может быть передано данных для работы (то есть параметров) и может при необходимости возвращать данные (возвращаемое значение). Все данные, переданные функции, явно передаются.</p>
 
@@ -151,7 +125,6 @@ $sentence = $name.' just left'; // John just left
     <li>Метод неявно передает объект, на который он был вызван.</li>
     <li>Метод способен работать с данными, содержащимися в классе (помня, что объект является экземпляром класса - класс является определением, объект является экземпляром этих данных).</li>
 </ul>
-
 <p>Памятка по некоторым функциям</p>
     <div class="blc_function">
         <div>
@@ -250,7 +223,6 @@ $sentence = $name.' just left'; // John just left
     <p>Параметры в процедуры и функции можно передавать 2 способами – по значению и по ссылке. Отличия между этими двумя способами следующие: при передаче параметра по значению в процедуру (функцию) передается копия переменной, а при передаче по ссылке – оригинал (сама переменная).</p>
     <p>Наглядный пример</p>
     <img src="/images/parameter-pass.gif" alt="Передача параметра по значению и передача по ссылке">
-    <hr>
     <h2>Ошибки в php</h2>
     <table class="tbl_2 errorfunc">
         <thead>
@@ -360,14 +332,7 @@ $sentence = $name.' just left'; // John just left
         </tr>
         </tbody>
     </table>
-    <p>Источники</p>
-<ul>
-    <li><a href="https://www.php.net/manual/ru/errorfunc.constants.php" target="_blank">Предопределенные константы</a></li>
-    <li><a href="https://habr.com/ru/post/161483/" target="_blank"> Ошибки PHP: классификация, примеры, обработка</a></li>
-</ul>
-    <hr>
     <h2>Массивы (Array)</h2>
-
     <p>Массивы (arrays) - это упорядоченные наборы данных, представляющие собой список однотипных элементов.</p>
     <p>Существует два типа массивов, различающиеся по способу идентификации элементов.</p>
     <ol>
@@ -376,63 +341,15 @@ $sentence = $name.' just left'; // John just left
     </ol>
     <p>Важной особенностью PHP является то, что PHP, в отличие от других языков, позволяет создавать массивы любой сложности непосредственно в теле программы (скрипта).</p>
     <p>Массивы могут быть как одномерными, так и многомерными.</p>
-
-    ...
-
-<hr>
 <h2>Сессии и Cookies</h2>
-
-<ul>
-<li><a href="http://www.php.su/articles/?cat=examples&page=070" target="_blank">Сессии в PHP</a></li>
-<li><a href="http://www.softtime.ru/bookphp/gl8_1.php" target="_blank">Сессии и cookie в PHP</a></li>
-<li><a href="http://anton.shevchuk.name/php/php-for-beginners-session/" target="_blank">Сессия // PHP</a></li>
-<li><a href="https://php.ru/forum/threads/avtorizacija-sessii-i-cookies.58468/" target="_blank">Авторизация, сессии и cookies</a></li>
-<li>php.net
-	<ul>
-		<li><a href="https://www.php.net/manual/ru/session.examples.basic.php" target="_blank">Основы использования</a></li>
-		<li><a href="https://www.php.net/manual/ru/features.cookies.php" target="_blank">Cookies</a></li>
-		<li><a href="https://www.php.net/manual/ru/function.setcookie.php" target="_blank">setcookie</a></li>
-	</ul>
-</li>
-<li>code.mu
-    <ul>
-        <li><a href="http://code.mu/books/php/auth/avtorizaciya-polzovatelej-cherez-kuki-na-php.html" target="_blank">Авторизация пользователей через куки (cookie)</a></li>
-        <li><a href="http://code.mu/books/php/auth/rabota-s-cookie-na-php.html" target="_blank">Работа с cookie на PHP</a></li>
-        <li><a href="http://code.mu/books/php/auth/rabota-s-sessiyami-php.html" target="_blank">Работа с сессиями PHP</a></li>
-        <li><a href="http://code.mu/books/php/auth/registraciya-i-avtorizaciya-polzovatelej-na-php.html" target="_blank">Регистрация и авторизация вместе</a></li>
-        <li><a href="http://code.mu/books/php/auth/avtorizaciya-cherez-fajly-na-php.html" target="_blank">Авторизация через файлы</a></li>
-        <li><a href="http://new.code.mu/ru/php/book/auth/session/" target="_blank">Добавляем сессию</a></li>
-        <li><a href="http://new.code.mu/ru/php/book/auth/authorization/" target="_blank">Простая авторизация через базу данных</a></li>
-    </ul>
-</li>
-</ul>
-
 <p>Веб-сервер не поддерживает постоянного соединения с клиентом, и каждый запрос обрабатывается, как новый, без связи с предыдущими.</p>
-
 <p>То есть, нельзя ни отследить запросы от одного и того же посетителя, ни сохранить для него переменные между просмотрами отдельных страниц. Вот для решения этих двух задач и были изобретены сессии. Собственно, <span class="like_b">сессии, если в двух словах - это механизм, позволяющий однозначно идентифицировать браузер и создающий для этого браузера файл на сервере, в котором хранятся переменные сеанса</span>.</p>
-
 <p class="like_b">Cookies - это механизм хранения данных браузером удаленной машины для отслеживания или идентификации возвращающихся посетителей.</p>
-
 <p>setcookie() задает cookie, которое будет передано клиенту вместе с другими HTTP-заголовками. Как и любой другой заголовок, cookie должны передаваться до того как будут выведены какие-либо другие данные скрипта (это ограничение протокола). Это значит, что в скрипте вызовы этой функции должны располагаться до остального вывода, включая вывод тегов html и head, а также пустые строки и пробельные символы.</>
 <p>После передачи клиенту cookie станут доступны через массив $_COOKIE при следующей загрузке страницы. Значения cookie также есть в $_REQUEST. </p>
-<ul>
-
-</ul>
-<hr>
 <h2>Регулярные выражения</h2>
-<p>Говорят, что рег.выражения - сила, вспоминая при этом про парсер'ы. Бум разбиратся</p>
 <p>Регулярные выражения - мощный гибкий инструмент для синтаксического анализа текста в соответствии с определенным шаблоном.</p>
-
-<ul>
-<li><a href="http://www.php.su/lessons/?lesson_17" target="_blank">Приложение № 3 - О регулярных выражениях.</a></li>
-<li><a href="http://www.php.su/articles/?cat=regexp&page=008" target="_blank">Регулярные выражения (шаблоны)</a></li>
-<li><a href="http://forum.php.su/forums.php?forum=4" target="_blank">Форумы портала PHP.SU » PHP » Регулярные выражения</a></li>
-<li><a href="http://archive-ipq-co.narod.ru/l1/regexp.html" target="_blank">Регулярные выражения</a></li>
-<li><a href="http://www.cyberforum.ru/php-regex/thread631382.html" target="_blank">Памятка по регулярным выражениям PCRE в PHP </a></li>
-<li><a href="https://www.internet-technologies.ru/articles/regulyarnye-vyrazheniya-php.html" target="_blank">Регулярные выражения PHP</a></li>
-</ul>
 <h3>Функции PCRE</h3>
-
 <ul>
 <li><a href="https://www.php.net/manual/ru/function.preg-filter.php">preg_filter</a> — Производит поиск и замену по регулярному выражению</li>
 <li><a href="https://www.php.net/manual/ru/function.preg-grep.php">preg_grep</a> — Возвращает массив вхождений, которые соответствуют шаблону</li>
@@ -445,18 +362,8 @@ $sentence = $name.' just left'; // John just left
 <li><a href="https://www.php.net/manual/ru/function.preg-replace.php">preg_replace</a> — Выполняет поиск и замену по регулярному выражению</li>
 <li><a href="https://www.php.net/manual/ru/function.preg-split.php">preg_split</a> — Разбивает строку по регулярному выражению</li>
 </ul>
-
-<hr>
 <h2>Работа с файловой системой</h2>
-<ul>
-<li><a href="https://metanit.com/web/php/5.1.php" target="_blank">Работа с файловой системой</a></li>
-<li><a href="https://php.net/manual/ru/book.filesystem.php" target="_blank">Файловая система</a></li>
-<li><a href="http://www.php.su/articles/?cat=fs&page=005" target="_blank">PHP. Работа с файлами</a></li>
-</ul>
 <hr>
-
-<hr>
-
 <h2>Практика</h2>
 <ul>
 <li>Первое практическое знакомство с PHP <a href="/study_working/working_php_0804.php">тут</a> и <a href="/study_working/working_php_other.php">тут</a></li>
@@ -467,5 +374,4 @@ $sentence = $name.' just left'; // John just left
 <li><a href="/study_working/working_php_regular.php">Регулярные выражения</a></li>
 <li><a href="/study_working/working_php_file_system.php">Работа с файловой системой</a></li>
 </ul>
-<?php //include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
 <?php include '../template/inc/footer.php'; ?>
