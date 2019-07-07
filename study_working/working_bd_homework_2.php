@@ -177,18 +177,18 @@ ORDER BY school_class.id
 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
 if($result) {
     $rows = mysqli_num_rows($result); // количество полученных строк
-    echo "<table class=\"tbl_1\"><tr>
-	<th>Класс</th>
-	<th>Учитель</th>
-	<th>Предмет</th>
-	</tr>";
+    echo "&lt;table class=&lt;\"tbl_1\"&gt;&lt;tr&gt;
+	&lt;th&gt;Класс&lt;/th&gt;
+	&lt;th&gt;Учитель&lt;/th&gt;
+	&lt;th&gt;Предмет&lt;/th&gt;
+	&lt;/tr&gt;";
     for ($i = 0 ; $i < $rows ; ++$i) {
         $row = mysqli_fetch_row($result);
-        echo "<tr>";
-            for ($j = 0 ; $j < 3 ; ++$j) echo "<td>$row[$j]</td>";
-        echo "</tr>";
+        echo "&lt;tr>";
+            for ($j = 0 ; $j < 3 ; ++$j) echo "&lt;td>$row[$j]&lt;/td&gt;";
+        echo "&lt;/tr&gt;";
     }
-     echo "</table>";
+     echo "&lt;/table&gt;";
     mysqli_free_result($result);
 }
 mysqli_close($link);
