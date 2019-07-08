@@ -1,18 +1,5 @@
 ﻿<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
-<h1>Заметки о командной строке</h1>
-<h2>Полезно почитать, источники</h2>
-<ul>
-<li><a href="https://git-scm.com/" target="_blank">Git</a>. Первоисточник по гиту: качаем программу, читаем мануалы
-	<ul>
-		<li><a href="https://git-scm.com/book/uk/v2" target="_blank">Как работать с Git'ом</a></li>
-	</ul>
-</li>
-<li><a href="https://htmlacademy.ru/blog/86-useful-commands-for-working-with-git" target="_blank">Полезные команды для работы с Git</a></li>
-<li><a href="https://proglib.io/p/git-cheatsheet/" target="_blank">Шпаргалка по Git, в которой представлены основные команды</a></li>
-<li><a href="http://dev-lab.info/2013/08/шпаргалка-по-git-основные-команды-слиян/" target="_blank">Шпаргалка по Git — основные команды, слияние веток, выписка веток с github</a></li>
-<li><a href="https://lifehacker.ru/komandy-linux/" target="_blank">71 команда Linux на все случаи жизни. Ну почти </a></li>
-<li><a href="https://losst.ru/tekstovyj-redaktor-nano-v-linux-dlya-novichkov" target="_blank">Текстовый редактор Nano в Linux для новичков</a></li>
-</ul>
+<h1>Заметки о командной строке и git</h1>
 
 <h2>Основные команды git</h2>
 <div class="spoiler_v2">
@@ -272,4 +259,3 @@
 <p><a href="/study_working/working_github.php">Домашний практикум с текстовым редактором nano</a></p>
 <hr>
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
-<?php //include '../template/inc/footer.php'; ?>

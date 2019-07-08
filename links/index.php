@@ -6,6 +6,9 @@
     <li><a href="https://html5book.ru/" target="_blank">HTML, CSS</a>
         <ul><li><a href="https://html5book.ru/css3-flexbox/#display" target="_blank">CSS flexbox</a></li></ul>
     </li>
+    <li><a href="http://htmlbook.ru/html/form" target="_blank">Тег &lt;form&gt;</a></li>
+    <li><a href="http://htmlbook.ru/samhtml5/formy" target="_blank">Формы</a></li>
+    <li><a href="https://html5book.ru/css3-flexbox/" target="_blank">CSS flexbox</a></li>
 </ul>
 <hr>
 <h2>PHP</h2>
@@ -40,6 +43,14 @@
     <li><a href="https://metanit.com/web/php/5.1.php" target="_blank">Работа с файловой системой</a></li>
     <li><a href="https://php.net/manual/ru/book.filesystem.php" target="_blank">Файловая система</a></li>
     <li><a href="http://www.php.su/articles/?cat=fs&page=005" target="_blank">PHP. Работа с файлами</a></li>
+</ul>
+<h3>Форма</h3>
+<ul>
+    <li><a href="https://www.php.net/manual/ru/tutorial.forms.php" target="_blank">Работа с формами</a></li>
+    <li><a href="http://www.php.su/articles/?cat=examples&page=069" target="_blank">HTML-формы</a></li>
+    <li><a href="http://www.php.su/phphttp/forms/" target="_blank">Работа с HTML формами</a></li>
+    <li><a href="http://www.php.su/phphttp/forms/?send" target="_blank">Передача параметров с помощью HTML-форм</a></li>
+    <li><a href="https://htmlweb.ru/php/php_form.php" target="_blank">Работа с формами</a></li>
 </ul>
 <h3>Ошибки</h3>
 <ul>
@@ -86,13 +97,126 @@
     <li><a href="https://php.net/manual/ru/book.filesystem.php" target="_blank">Файловая система</a></li>
     <li><a href="http://www.php.su/articles/?cat=fs&page=005" target="_blank">PHP. Работа с файлами</a></li>
 </ul>
+<h2>ООП</h2>
+<ul>
+    <li><a href="https://php-academy.kiev.ua/uk/blog/learning-oop-in-php-asap" target="_blank">Вивчення OOP в PHP якнайшвидше! </a></li>
+    <li><a href="http://www.php.su/learnphp/phpoo/" target="_blank">PHP и ООП</a></li>
+    <li><a href="https://razrab.info/principy-oop-php/" target="_blank">Принципы ООП PHP (основные понятия и парадигмы)</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/Объектно-ориентированное_программирование" target="_blank">ООП</a></li>
+    <li><a href="https://www.php.net/manual/ru/language.oop5.magic.php" target="_blank">Магические методы</a></li>
+    <li><a href="https://www.internet-technologies.ru/articles/magicheskie-metody-php.html" target="_blank">Магические методы PHP</a></li>
+    <li><a href="https://www.php.net/manual/ru/language.oop5.visibility.php" target="_blank">Область видимости</a></li>
+    <li><a href="https://habr.com/ru/post/37576/" target="_blank"> Полиморфизм для начинающих</a></li>
+    <li><a href="https://habr.com/ru/post/37610/" target="_blank">Что такое полиморфизм на самом деле. В PHP он тоже существует.</a></li>
+    <li><a href="https://habr.com/ru/post/37576/" target="_blank">Полиморфизм для начинающих </a></li>
+    <li>Интерфейс
+        <ul>
+            <li><a href="https://www.php.net/manual/ru/language.oop5.interfaces.php" target="_blank">Интерфейсы объектов</a></li>
+            <li><a href="https://habr.com/ru/post/328890/" target="_blank">Всё, что вы хотели узнать об интерфейсах</a></li>
+            <li><a href="https://www.internet-technologies.ru/articles/interfeys-php.html" target="_blank">Интерфейс PHP</a></li>
+            <li><a href="https://klisl.com/php_Interface.html" target="_blank">Для чего нужны интерфейсы в PHP</a></li>
+            <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
+        </ul>
+    </li>
+    <li>Абстрактный класс
+        <ul>
+            <li><a href="https://php.net/manual/ru/language.oop5.abstract.php" target="_blank">Абстрактные классы</a></li>
+            <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
+            <li><a href="https://www.internet-technologies.ru/articles/abstraktnyy-klass-php.html" target="_blank">Абстрактный класс PHP</a></li>
+            <li><a href="https://true-coder.ru/oop-v-php/oop-v-php-abstraktnye-klassy-i-interfejsy.html" target="_blank">ООП в PHP: Абстрактные классы и интерфейсы</a></li>
+            <li><a href="http://lifeexample.ru/php-primeryi-skriptov/abstraktnyiy-klass-php.html" target="_blank">Абстрактный класс php</a></li>
+        </ul>
+
+    </li>
+    <li>SOLID
+        <ul>
+            <li><a href="https://ru.wikipedia.org/wiki/SOLID_(объектно-ориентированное_программирование)" target="_blank">SOLID</a></li>
+            <li><a href="https://habr.com/ru/post/208442/" target="_blank"> Шпаргалка по SOLID-принципам с примерами на PHP </a></li>
+        </ul>
+    </li>
+</ul>
+<h3>Абстрактный класс</h3>
+<ul>
+    <li><a href="https://php.net/manual/ru/language.oop5.abstract.php" target="_blank">Абстрактные классы</a></li>
+    <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
+    <li><a href="https://www.internet-technologies.ru/articles/abstraktnyy-klass-php.html" target="_blank">Абстрактный класс PHP</a></li>
+    <li><a href="https://true-coder.ru/oop-v-php/oop-v-php-abstraktnye-klassy-i-interfejsy.html" target="_blank">ООП в PHP: Абстрактные классы и интерфейсы</a></li>
+</ul>
+<h3>Интерфейсы объектов</h3>
+<ul>
+    <li><a href="https://www.php.net/manual/ru/language.oop5.interfaces.php" target="_blank">Интерфейсы объектов</a></li>
+    <li><a href="https://habr.com/ru/post/328890/" target="_blank">Всё, что вы хотели узнать об интерфейсах</a></li>
+    <li><a href="https://www.internet-technologies.ru/articles/interfeys-php.html" target="_blank">Интерфейс PHP</a></li>
+    <li><a href="https://klisl.com/php_Interface.html" target="_blank">Для чего нужны интерфейсы в PHP</a></li>
+    <li><a href="http://www.php.su/articles/?cat=oop&page=002" target="_blank">Абстрактные классы и интерфейсы</a></li>
+</ul>
+<h3>Патерны</h3>
+<ul>
+    <li><a href="https://refactoring.guru/ru/design-patterns/php" target="_blank">Каталог PHP-примеров</a></li>
+    <li><a href="https://designpatternsphp.readthedocs.io/ru/latest/README.html" target="_blank">DesignPatternsPHP</a></li>
+    <li><a href="https://habr.com/ru/post/214285/" target="_blank"> Шаблоны проектирования PHP. Часть 1. Порождающие </a></li>
+    <li><a href="https://habr.com/ru/company/mailru/blog/325492/" target="_blank"> Шаблоны проектирования с человеческим лицом </a></li>
+    <li><a href="https://habr.com/ru/post/136766/" target="_blank"> Паттерны ООП в метафорах </a></li>
+    <li><a href="https://habr.com/ru/post/150267/" target="_blank"> Реализация MVC паттерна на примере создания сайта-визитки на PHP </a></li>
+</ul>
 <hr>
 <h2>SQL</h2>
+<ul>
+    <li><a href="https://www.hostinger.ru/rukovodstva/shto-takoje-mysql/" target="_blank">Что Такое MySQL: Объяснение MySQL Для Начинающих</a></li>
+    <li><a href="http://tradebenefit.ru/primery-mysql-zaprosov" target="_blank">Примеры SQL запросов к базе данных MySQL</a></li>
+    <li><a href="https://www.site-do.ru/db/db.php#2" target="_blank">Уроки SQL и баз данных</a>
+        <ul><li><a href="https://www.site-do.ru/db/sql4.php" target="_blank">Урок 4. Выборка данных - оператор SELECT</a></li></ul>
+    </li>
+    <li><a href="https://www.php.net/manual/ru/mysqli.quickstart.statements.php" target="_blank">Выполнение запросов</a></li>
+    <li><a href="https://www.php.net/manual/ru/function.mysql-query.php" target="_blank">mysql_query</a></li>
+    <li><a href="https://php.ru/manual/function.mysql-query.html" target="_blank">mysql_query - Посылает запрос MySQL</a></li>
+    <li><a href="http://www.php.su/articles/?cat=phpdb&page=025" target="_blank">SQL - запросы и их обработка с помощью PHP</a></li>
+    <li><a href="https://htmlweb.ru/php/mysql.php" target="_blank">Связь с базами данных MySQL</a></li>
+    <li><a href="https://metanit.com/web/php/7.5.php" target="_blank">Получение данных</a></li>
+    <li><a href="http://moonexcel.com.ua/уроки-sql14-создание-таблиц-create-table_ru" target="_blank">SQL-Урок 14. Создание таблиц (CREATE TABLE)</a></li>
+    <li><a href="https://anton-pribora.ru/articles/mysql/mysql-join/" target="_blank">MySQL немного о JOIN'ах</a></li>
+    <li><a href="http://www.skillz.ru/dev/php/article-Obyasnenie_SQL_obedinenii_JOIN_INNER_OUTER.html" target="_blank">Объяснение SQL объединений JOIN: LEFT/RIGHT/INNER/OUTER</a></li>
+    <li><a href="https://habr.com/ru/post/247373/" target="_blank">Основы индексов в SQL Server [habr]</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/Индекс_(базы_данных)" target="_blank">Индекс (базы данных) [wikipedia]</a></li>
+    <li><a href="http://qaru.site/questions/75134/what-is-innodb-and-myisam-in-mysql" target="_blank">Что такое InnoDB и MyISAM в MySQL?</a></li>
+    <li><a href="https://www.it-rem.ru/mysql-otlichiya-mezhdu-myisam-i-innodb.html" target="_blank">MySQL: отличия между MyISAM и InnoDB</a></li>
+    <li><a href="http://jtest.ru/bazyi-dannyix/sql-dlya-nachinayushhix-chast-3.html" target="_blank">SQL для начинающих. Часть 3</a></li>
+    <li><a href="http://2sql.ru/novosti/sql-inner-join/" target="_blank">Оператор SQL INNER JOIN</a></li>
+    <li><a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank">SQL Joins</a></li>
+    <li><a href="https://ru.stackoverflow.com/questions/633789/Как-связать-3-таблицы-в-sql-запросе" target="_blank">Как связать 3 таблицы в SQL запросе?</a></li>
+    <li><a href="http://www.php.su/mysql/manual/?page=EXPLAIN" target="_blank">5.2.1 Синтаксис оператора EXPLAIN (получение информации о SELECT)</a></li>
+    <li><a href="https://habr.com/ru/post/211022/" target="_blank">Использование EXPLAIN. Улучшение запросов </a></li>
+    <li><a href="http://www.mysql.ru/docs/man/EXPLAIN.html" target="_blank">5.2.1 Синтаксис оператора EXPLAIN (получение информации о SELECT)</a></li>
+</ul>
 <hr>
-
 <h2>JS</h2>
 <ul>
-<li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник Javascript</a></li>
+    <li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник Javascript</a></li>
+    <li><a href="https://plnkr.co/edit/?p=preview" target="_blank"><b>Helping developers make the web</b></a></li>
+    <li><a href="http://qaru.site/questions/12331/what-is-event-bubbling-and-capturing" target="_blank">Что такое пузырь и захват событий?</a></li>
+    <li><a href="http://www.linkex.ru/java/inc-dec.php" target="_blank">Инкремент и декремент</a></li>
+    <li><a href="https://learn.javascript.ru/types-intro" target="_blank">Шесть типов данных, typeof</a></li>
+    <li><a href="https://learn.javascript.ru/object" target="_blank">Объекты как ассоциативные <span class="like_b">массивы</span></a></li>
+    <li><a href="http://qaru.site/questions/718978/angularjs-splice-vs-slice" target="_blank">JavaScript Массив сплайс против ломтика</a></li>
+    <li><a href="https://learn.javascript.ru/array-methods" target="_blank">Массивы: методы</a></li>
+    <li><a href="https://developer.mozilla.org/uk/docs/Learn/JavaScript/Objects/Basics" target="_blank">Основи об'єктів</a></li>
+    <li><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Array.prototype.forEach()</a></li>
+    <li><a href="https://learn.javascript.ru/array-iteration" target="_blank">Массив: перебирающие методы</a></li>
+    <li><a href="http://javascript.ru/tutorial/object/intro" target="_blank">Объекты Javascript в примерах</a></li>
+    <li><a href="http://mathhelpplanet.com/static.php?p=javascript-algoritmy-sortirovki" target="_blank">Алгоритмы сортировок на JavaScript</a></li>
+    <li><a href="http://javascript.ru/tutorial/object/intro" target="_blank">Объекты Javascript в примерах</a></li>
+</ul>
+<h3>Splice and Slice</h3>
+<ul>
+    <li><a href="http://qaru.site/questions/718978/angularjs-splice-vs-slice" target="_blank">JavaScript Массив сплайс против ломтика</a></li>
+    <li><a href="https://learn.javascript.ru/array-methods" target="_blank">Массивы: методы</a></li>
+</ul>
+<h3>Массив: перебирающие методы (forEach)</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/uk/docs/Learn/JavaScript/Objects/Basics" target="_blank">Основи об'єктів в JavaScript</a></li>
+    <li><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Array.prototype.forEach()</a></li>
+    <li><a href="https://learn.javascript.ru/array-iteration" target="_blank">Массив: перебирающие методы</a></li>
+    <li><a href="http://javascript.ru/tutorial/object/intro" target="_blank">Объекты Javascript в примерах</a></li>
 </ul>
 <hr>
 <h2>PHP-фреймворк</h2>
@@ -107,12 +231,20 @@
 <hr>
 <h2>Git</h2>
 <ul>
-    <li>Этот сайт на <a href="https://github.com/filatr/pr" target="_blank">GitHub.com</a></li>
-    <li><a href="https://git-scm.com/" target="_blank">Git</a> + учебник по работе Git'ом</li>
+    <li><a href="https://github.com/filatr/pr" target="_blank">GitHub.com</a></li>
     <li>О Git'е на <a href="https://ru.wikipedia.org/wiki/Git" target="_blank">Wikipedia</a></li>
+    <li><a href="https://git-scm.com/" target="_blank">Git</a>. Первоисточник по гиту: качаем программу, читаем мануалы
+        <ul>
+            <li><a href="https://git-scm.com/book/uk/v2" target="_blank">Как работать с Git'ом</a></li>
+        </ul>
+    </li>
+    <li><a href="https://htmlacademy.ru/blog/86-useful-commands-for-working-with-git" target="_blank">Полезные команды для работы с Git</a></li>
+    <li><a href="https://proglib.io/p/git-cheatsheet/" target="_blank">Шпаргалка по Git, в которой представлены основные команды</a></li>
+    <li><a href="http://dev-lab.info/2013/08/шпаргалка-по-git-основные-команды-слиян/" target="_blank">Шпаргалка по Git — основные команды, слияние веток, выписка веток с github</a></li>
+    <li><a href="https://lifehacker.ru/komandy-linux/" target="_blank">71 команда Linux на все случаи жизни. Ну почти </a></li>
+    <li><a href="https://losst.ru/tekstovyj-redaktor-nano-v-linux-dlya-novichkov" target="_blank">Текстовый редактор Nano в Linux для новичков</a></li>
 </ul>
 <hr>
-
 <h2>Разное</h2>
 <ul>
     <li><a href="http://www.avalanche.kiev.ua/site/free/convert-table-html.html" target="_blank">Excel в HTML</a></li>
@@ -121,6 +253,4 @@
     <li><a href="https://www.10bestdesign.com/dirtymarkup/" target="_blank">DirtyMarkup Formatter - HTML, CSS, &amp; JavaScript Beautifier</a></li>
 </ul>
 <hr>
-
-
 <?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>

@@ -1,27 +1,6 @@
 ﻿<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/header.php"); ?>
-<h1>JS: теория</h1>
-
-<h2>Полезные сайты</h2>
-<ul>
-<li><a href="https://plnkr.co/edit/?p=preview" target="_blank"><b>Helping developers make the web</b></a></li>
-<li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник Javascript</a></li>
-<li><a href="http://qaru.site/questions/12331/what-is-event-bubbling-and-capturing" target="_blank">Что такое пузырь и захват событий?</a></li>
-<li><a href="http://www.linkex.ru/java/inc-dec.php" target="_blank">Инкремент и декремент</a></li>
-<li><a href="https://learn.javascript.ru/types-intro" target="_blank">Шесть типов данных, typeof</a></li>
-<li><a href="https://learn.javascript.ru/object" target="_blank">Объекты как ассоциативные <span class="like_b">массивы</span></a></li>
-<li><a href="http://qaru.site/questions/718978/angularjs-splice-vs-slice" target="_blank">JavaScript Массив сплайс против ломтика</a></li>
-<li><a href="https://learn.javascript.ru/array-methods" target="_blank">Массивы: методы</a></li>
-<li><a href="https://developer.mozilla.org/uk/docs/Learn/JavaScript/Objects/Basics" target="_blank">Основи об'єктів</a></li>
-<li><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Array.prototype.forEach()</a></li>
-<li><a href="https://learn.javascript.ru/array-iteration" target="_blank">Массив: перебирающие методы</a></li>
-<li><a href="http://javascript.ru/tutorial/object/intro" target="_blank">Объекты Javascript в примерах</a></li>
-<li><a href="http://mathhelpplanet.com/static.php?p=javascript-algoritmy-sortirovki" target="_blank">Алгоритмы сортировок на JavaScript</a></li>
-<li><a href="http://javascript.ru/tutorial/object/intro" target="_blank">Объекты Javascript в примерах</a></li>
-</ul>
-
-<h2>Теория</h2>
-
-<h3>Шесть типов данных, typeof</h3>
+<h1>JavaScript</h1>
+<h2>Шесть типов данных, typeof</h2>
 <ol>
 <li>Число «number»</li>
 <li>Строка «string»</li>
@@ -30,9 +9,7 @@
 <li>Специальное значение «undefined»</li>
 <li>Объекты «object»</li>
 </ol>
-<hr>
-<h3>Оператор typeof</h3>
-
+<h2>Оператор typeof</h2>
 <p>Оператор typeof возвращает тип аргумента.</p>
 <p>У него есть два синтаксиса: со скобками и без:</p>
 <ul>
@@ -40,11 +17,7 @@
     <li>Синтаксис функции: typeof(x).</li>
 </ul>
 <p>Работают они одинаково, но первый синтаксис короче.</p>
-
-
-<hr>
-
-<h3>Splice and Slice</h3>
+<h2>Splice and Slice</h2>
 <p><b>Важно знать</b></p>
 <p>Splice and Slice - это функции Javascript Array.</p>
 <p>Splice vs Slice</p>
@@ -55,13 +28,7 @@
 <p>Аргумент 1: Индекс, обязательно. Целое число, указывающее, в какую позицию добавлять/удалять элементы. Используйте отрицательные значения для указания позиции из конца массива.</p>
 <p>Аргумент 2: Необязательно. Количество элементов для удаления. Если установлено значение 0 (ноль), никакие элементы не будут удалены. И если не будет передано, все элементы из предоставленного индекса будут удалены.</p>
 <p>Аргумент 3... n: Необязательно. Новый элемент (ы), который нужно добавить в массив.</p>
-<p><a href="http://qaru.site/questions/718978/angularjs-splice-vs-slice" target="_blank">Источник 1</a></p>
-<p><a href="https://learn.javascript.ru/array-methods" target="_blank">Источник 2</a></p>
-
-<hr>
-
-<h3>Массив: перебирающие методы (forEach)</h3>
-
+<h2>Массив: перебирающие методы (forEach)</h2>
 <script>
 /*massEff.forEach (function (el, i, arr){
   console.log('element' + el, i, arr);
@@ -82,15 +49,8 @@
 <p>На відміну від map() чи reduce(), метод forEach() завжди вертає значення undefined, тож продовжити ланцюжок викликів після нього неможливо. Досить типовим є виклик forEach() наприкінці ланцюжка методів з метою виконання додаткових дій.</p>
 <p>Сам метод forEach() не змінює масив, на якому його викликано, втім усередині функції callback це можливо.</p>
 <p><b>Заувага:</b> Зупинити чи перервати цикл forEach() неможливо без викидання винятку. Якщо вам це потрібно, метод forEach() — не ліпший вибір. Скористайтеся натомість звичайним циклом. Якщо ви перевіряєте елементи масиву на відповідність певній умові та маєте потребу повернути значення типу Boolean, зверніть увагу на методи every() та some(). Також можна скористатись новими методами find() та findIndex(), якщо вони доступні, — в цих методах перебір елементів переривається, якщо чергове значення відповідає умові.</p>
-
-<p><a href="https://developer.mozilla.org/uk/docs/Learn/JavaScript/Objects/Basics" target="_blank">Источник 1</a></p>
-<p><a href="https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Источник 2</a></p>
-<p><a href="https://learn.javascript.ru/array-iteration" target="_blank">Источник 3</a></p>
-<p><a href="http://javascript.ru/tutorial/object/intro" target="_blank">Объекты Javascript в примерах</a></p>
-
 <hr>
 <h2>Практика</h2>
-
 <ol>
 <li><a href="/study_working/working_js_calc.php" target="_blank">Простейший калькулятор</a>, запукскается при заходе на стр</li>
 <li><a href="/study_working/working_js_function.php" target="_blank">Юзаем function</a></li>
@@ -99,10 +59,5 @@
 </li>
 </ol>
 <p>Финальное домашнее <a href="/study_working/working_js_final_assignment.php" target="_blank">задание по JS</a></p>
-
 <hr>
-
-
-
-<?php include ("{$_SERVER['DOCUMENT_ROOT']}/template/inc/footer.php"); ?>
-<?php //include '../template/inc/footer.php'; ?>
+<?php include '../template/inc/footer.php'; ?>
