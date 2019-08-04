@@ -41,6 +41,12 @@ elseif ($_SERVER['REQUEST_URI']=='/study_working/working_bd_homework_1.php') {
 elseif ($_SERVER['REQUEST_URI']=='/study_working/working_bd_homework_2.php') {
 	$title = "Практика с БД";
 }
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_bd_3.php') {
+	$title = "Группировка данных";
+}
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_bd_4.php') {
+	$title = "Редактирование и удаление записей";
+}
 elseif ($_SERVER['REQUEST_URI']=='/study_working/working_cookies.php') {
 	$title = "Сессии и Cookies";
 }
@@ -77,6 +83,9 @@ elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_cycle.php') {
 elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_regular.php') {
 	$title = "Регулярные выражения";
 }
+elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_sort.php') {
+	$title = "Сортировка";
+}
 elseif ($_SERVER['REQUEST_URI']=='/study_working/working_php_file_system.php') {
 	$title = "Работа с файловой системой";
 }
@@ -103,7 +112,3 @@ $title = "Песочница";
 $description = "Песочница. Просто песочница. Проходи дальше";
 $keywords = "песочница, PHP, SQL, JavaScript, HTML, CSS, практика, теория";
 $robots = "index, follow";
-
-
-?>
-	

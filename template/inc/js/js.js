@@ -68,3 +68,65 @@ $(document).on('click','.spoiler-trigger',function(e){e.preventDefault();$(this)
 // alert (b);}
 // else {alert (b=a)}
 
+    function getRes1() {
+        $.ajax({
+            url: '/template/inc/get_data_for_1.php',
+            dataType: "json",
+        }).done(function(resList){
+
+            var resHTML = "<table class='table'>" +
+                "<tr>" +
+                "<th>Номер заказа</th>" +
+                "<th>Товар</th>" +
+                "<th>Цена</th>" +
+                "<th>Количество</th>" +
+                "<th>Оператор</th>" +
+                "</tr>" ;
+
+            for(var i=0; i<resList.length; i++){
+
+                resHTML += "<tr>";
+                resHTML += "<td>"+resList[i].id+"</td>";
+                resHTML += "<td>"+resList[i].name+"</td>";
+                resHTML += "<td>"+resList[i].price+"</td>";
+                resHTML += "<td>"+resList[i].count+"</td>";
+                resHTML += "<td>"+resList[i].oper+"</td>";
+                resHTML += "</tr>";
+            }
+            resHTML += "</table>" ;
+            console.log(resHTML);
+            $("#res1").html(resHTML);
+        }).fail(function(){
+            alert("Server request error!");
+        });
+    }
+    getRes1();
+
+    function getRes2() {
+        $.ajax({
+            url: '/template/inc/get_data_for_2.php',
+            dataType: "json",
+        }).done(function(resList){
+
+            var resHTML = "<table class='table'>" +
+                "<tr>" +
+                "<th>Товар</th>" +
+                "<th>Количество</th>" +
+                "<th>Цена</th>" +
+                "</tr>" ;
+
+            for(var i=0; i<resList.length; i++){
+
+                resHTML += "<tr>";
+                resHTML += "<td>"+resList[i].name+"</td>";
+                resHTML += "<td>"+resList[i].counts+"</td>";
+                resHTML += "<td>"+resList[i].prices+"</td>";
+                resHTML += "</tr>";
+            }
+            resHTML += "</table>" ;
+            $("#res2").html(resHTML);
+        }).fail(function(){
+            alert("Server request error!");
+        });
+    }
+    getRes2();

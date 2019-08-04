@@ -10,6 +10,14 @@
     <li><a href="http://htmlbook.ru/samhtml5/formy" target="_blank">Формы</a></li>
     <li><a href="https://html5book.ru/css3-flexbox/" target="_blank">CSS flexbox</a></li>
 </ul>
+
+<h3>Bootstrap</h3>
+
+<ul>
+    <li><a href="https://html5css.ru/bootstrap4/default.php" target="_blank">Bootstrap 4 Учебник</a></li>
+    <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank">Bootstrap 3 or Bootstrap 4</a></li>
+    <li><a href="https://bootstrap-4.ru/" target="_blank">Bootstrap. Документация на русском языке.</a></li>
+</ul>
 <hr>
 <h2>PHP</h2>
 <ul>

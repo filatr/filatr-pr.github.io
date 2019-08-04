@@ -161,6 +161,7 @@ $sentence = $name.' just left'; // John just left
                         <li><a href="https://www.php.net/manual/ru/function.krsort.php" target="_blank">krsort</a> – отсортировать массив по ключам в обратном порядке</li>
                     </ul>
                 </li>
+                <li><a href="https://www.php.net/manual/ru/function.array.php" target="_blank">array</a> – Создает массив</li>
                 <li><a href="https://www.php.net/manual/ru/function.array-flip.php" target="_blank">array_flip</a> – меняет местами ключи с их значениями в массиве</li>
                 <li><a href="https://www.php.net/manual/ru/function.shuffle.php" target="_blank">shuffle</a> – перемешать массив</li>
                 <li><a href="https://www.php.net/manual/ru/function.array-unique.php" target="_blank">array_unique</a> – убрать повторяющиеся значения из массива</li>

@@ -12,14 +12,14 @@ a:visited {
 a:hover {
     color: #000;
 }
-
 .clear {clear: both;}
 .header,
 .footer {
     margin: 0 auto;
     width: 88%;
-}
+    max-width: 88%;
 
+}
 .header {
     background-color: #f5da81;
 	border-radius: 25px;
@@ -34,41 +34,6 @@ a:hover {
 	background:none;
 	margin: 15px 0;
 }
-#main_menu li {
-    background:none;
-	display: inline-block;
-	/*justify-content: center;
-	align-items: center;*/
-    list-style: none;
-    margin: 0;
-    padding: 0 5px;
-	width: 15%;
-}
-#main_menu li li {width: 100%;}
-#main_menu a {
-    background-color: #0b3b0b;
-    border: 1px solid #f00;
-    color: #cef6ce;
-    display: block;
-	/*height: 40px;*/
-    font-size: 17px;
-    font-weight: bold;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-}
-#main_menu li:hover a {color: #f00;}
-.sub_menu {
-    margin: 0 !important;
-    position: absolute;
-}
-.sub_menu li {
-    display: block !important;
-}
-
-
 .contet {
     background-color: #ffffa4;
     border: 1px dotted #fd0;
@@ -76,6 +41,7 @@ a:hover {
     margin: 0 auto 10px;
     padding: 20px 10px;
     width: 88%;
+    max-width: 88%;
 }
 .contet ul,
 .contet ol
@@ -219,21 +185,6 @@ hr {
 }
 
 
-#main_menu li .sub_menu {display: none;}
-
-
-#main_menu li:hover .sub_menu {display: block;}
-#main_menu li:hover .sub_menu a{color: #fff;}
-
-
-/*
-.sl0 {
-    border: 1px solid #000;
-    height: 400px;
-    margin: 0 auto;
-    width: 400px;
-}*/
-
 .bx-viewport {
     background: none !important;
     border: medium none !important;
@@ -244,31 +195,6 @@ hr {
 textarea.css_flaot_img {
     height: 165px;
 }
-
-/*
-div.footer div.blco {
-    border: 2px double #000;
-    border-radius: 20px;
-    float: left;
-    height: 50px;
-    margin: 15px;
-    padding: 10px;
-    width: 30%;
-}
-*/
-
-div.footer div.blco {
-    border: 2px double #000;
-    border-radius: 20px;
-    display: inline-table;
-    height: 40px;
-    margin: 15px auto;
-    padding: 10px;
-    text-align: left;
-    vertical-align: top;
-    width: 30%;
-}
-
 .blco.blco_n_3 {font-size: 20px;}
 .blco.blco_n_3 a {
     color: #f00;
@@ -276,9 +202,6 @@ div.footer div.blco {
     font-weight: bold;
     text-decoration: none;
 }
-
-
-
 .site {
     display: inline-block;
 	margin: 5px;
@@ -344,17 +267,10 @@ div.footer div.blco {
     vertical-align: top;
     width: 30%;
 }
-
 .mytraf a {
     font-weight: bold;
     text-decoration: none;
-}
-/*div.contet div.bit_php {
-    display: none;
-}*/
-
-
-.shtabs > div,
+}.shtabs > div,
 .shtabs > input {
 	display: none;
 }
@@ -563,7 +479,7 @@ pre code {
 .our_school textarea {
     display: block;
     margin: 10px auto 20px;
-    height: 40px;
+    height: 50px;
 }
 .tbl_1{
   border-collapse: collapse;
