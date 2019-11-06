@@ -20,6 +20,7 @@
     <li><a href="/study_working/working_php_cycle.php">Цыклы</a></li>
     <li><a href="/study_working/working_php_sort.php">Сортировка</a></li>
     <li><a href="/study_working/working_form_examples.php">PHP в формах</a></li>
+    <li><a href="/study_working/working_form_examples_3.php">PHP в формах, v3</a></li>
     <li>PHP в при работе с БД <a href="/study_working/working_bd_homework_1.php">Домашка 1</a></li>
     <li>PHP в при работе с БД <a href="/study_working/working_bd_homework_2.php">Домашка 2</a></li>
     <li>PHP в при работе с БД <a href="/study_working/working_bd_4.php">редактирование и удаление записей</a></li>

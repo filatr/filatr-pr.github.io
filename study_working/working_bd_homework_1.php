@@ -15,22 +15,21 @@ if($result)
 {
     $rows = mysqli_num_rows($result); // количество полученных строк
      
-    echo "<div class=\"test_bd\">
-	<div>Id</div>
-	<div>Имя</div>
-	<div>Возраст</div>
-	<div>E-mail</div>
-	<div>Редактируем запись</div>
-	</div>";
+    echo "<table class='table'>
+	<tr><td>Id</td>
+	<td>Имя</td>
+	<td>Возраст</td>
+	<td>E-mail</td>
+	<td>Редактируем запись</td></tr>";
     for ($i = 0 ; $i < $rows ; ++$i)
     {
         $row = mysqli_fetch_row($result);
-        echo "<div class=\"test_bd\">";
-            for ($j = 0 ; $j < 4 ; ++$j) echo "<div>$row[$j]</div>";
-			for ($k = 0 ; $k < 1 ; ++$k) echo "<div><a href=\"?id=$row[0]#url\">Запись $row[0]</a></div>";
-        echo "</div>";
+        echo "<tr>";
+            for ($j = 0 ; $j < 4 ; ++$j) echo "<td>$row[$j]</td>";
+			for ($k = 0 ; $k < 1 ; ++$k) echo "<td><a href=\"?id=$row[0]#url\">Запись $row[0]</a></td>";
+        echo "</tr>";
     }
-     
+    echo "</tr></table>";
     // очищаем результат
     mysqli_free_result($result);
 }
